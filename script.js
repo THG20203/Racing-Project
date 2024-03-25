@@ -1,5 +1,9 @@
+"use strict";
+
+// Variables
 const teamInfoContainer = document.getElementById("team-info");
 
+// Objects
 const racingTeams = {
   team: [
     "TTG Racing",
@@ -29,9 +33,11 @@ const racingTeams = {
     "Brands Hatch",
     ["Silverstone Race 1", "Silverstone Race 2", "Silverstone Race 3"],
   ],
-  foundingYear: [2022, 2023, 2024],
+  foundingYear: [2024, 2021, 2022, 2023, 2020],
 };
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+/* The team and competitiors cards */
 for (let i = 0; i < racingTeams.team.length; i++) {
   /* Create a div element to hold the information for each team */
   const teamDiv = document.createElement("div");
@@ -48,9 +54,7 @@ for (let i = 0; i < racingTeams.team.length; i++) {
     chooseManufacture = racingTeams.manufacture[0];
   } else {
     chooseManufacture =
-      racingTeams.manufacture[
-        Math.floor(Math.random() * (racingTeams.manufacture.length - 1)) + 1
-      ];
+      racingTeams.manufacture[(i % (racingTeams.manufacture.length - 1)) + 1];
   }
   const manufactureSpan = document.createElement("span");
   manufactureSpan.textContent = "Manufacture: " + chooseManufacture;
@@ -69,12 +73,10 @@ for (let i = 0; i < racingTeams.team.length; i++) {
   roundsSpan.textContent = "Rounds: " + allRounds;
 
   // Founding Year
-  const randomFoundingYear =
-    racingTeams.foundingYear[
-      Math.floor(Math.random() * racingTeams.foundingYear.length)
-    ];
+  const foundingYear =
+    racingTeams.foundingYear[i % racingTeams.foundingYear.length];
   const foundingYearSpan = document.createElement("span");
-  foundingYearSpan.textContent = "Founding Year: " + randomFoundingYear;
+  foundingYearSpan.textContent = "Founding Year: " + foundingYear;
 
   // Append all information to the team div
   teamDiv.appendChild(teamNameSpan);
