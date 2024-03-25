@@ -1,7 +1,4 @@
-const teamNameEl = document.getElementById("team-name");
-const manufactureEl = document.getElementById("manufacture-name");
-const circuitRoundEl = document.getElementById("circuit-round");
-const foundingYearEl = document.getElementById("founding-year");
+const teamInfoContainer = document.getElementById("team-info");
 
 const racingTeams = {
   team: [
@@ -35,28 +32,56 @@ const racingTeams = {
   foundingYear: [2022, 2023, 2024],
 };
 
-/* Team Name */
-let [teamName1] = racingTeams.team;
-console.log(teamName1);
-let teamName = teamNameEl.textContent;
-teamNameEl.textContent = teamName1;
+for (let i = 0; i < racingTeams.team.length; i++) {
+  /* Create a div element to hold the information for each team */
+  const teamDiv = document.createElement("div");
+  teamDiv.classList.add("team-details");
 
-/* Manufacture */
-let [team1Manufacture] = racingTeams.manufacture;
-console.log(team1Manufacture);
-let teamManufacture = manufactureEl.textContent;
-manufactureEl.textContent = team1Manufacture;
+  // Team Name
+  const teamNameSpan = document.createElement("span");
+  teamNameSpan.textContent = "Team Name: " + racingTeams.team[i];
 
-/* Rounds */
-let [Team1RoundA, Team1RoundB, [Team1RoundC, Team1RoundD], Team1RoundE] =
-  racingTeams.round;
-console.log(Team1RoundA, Team1RoundB, Team1RoundC, Team1RoundD, Team1RoundE);
-/* All rounds I've destructed into a string? Concatenate it before assigning it */
-let Team1AllRounds = `${Team1RoundA}, ${Team1RoundB}, ${Team1RoundC}, ${Team1RoundD}, ${Team1RoundE}`;
-circuitRoundEl.textContent = Team1AllRounds;
+  // Manufacture
+  let chooseManufacture;
+  if (i === 0) {
+    /* First team gets "TG Racing Cars" */
+    chooseManufacture = racingTeams.manufacture[0];
+  } else {
+    chooseManufacture =
+      racingTeams.manufacture[
+        Math.floor(Math.random() * (racingTeams.manufacture.length - 1)) + 1
+      ];
+  }
+  const manufactureSpan = document.createElement("span");
+  manufactureSpan.textContent = "Manufacture: " + chooseManufacture;
 
-/* Founding Year */
-let [, Team1FoundingYear, ,] = racingTeams.foundingYear;
-console.log(Team1FoundingYear);
-let teamFoundingYear = foundingYearEl.textContent;
-foundingYearEl.textContent = Team1FoundingYear;
+  // Rounds
+  let [
+    round1,
+    round2,
+    [round3a, round3b],
+    round4,
+    round5,
+    [round6a, round6b, round6c],
+  ] = racingTeams.round;
+  let allRounds = `${round1}, ${round2}, ${round3a}, ${round3b}, ${round4}, ${round5}, ${round6a}, ${round6b}, ${round6c}`;
+  const roundsSpan = document.createElement("span");
+  roundsSpan.textContent = "Rounds: " + allRounds;
+
+  // Founding Year
+  const randomFoundingYear =
+    racingTeams.foundingYear[
+      Math.floor(Math.random() * racingTeams.foundingYear.length)
+    ];
+  const foundingYearSpan = document.createElement("span");
+  foundingYearSpan.textContent = "Founding Year: " + randomFoundingYear;
+
+  // Append all information to the team div
+  teamDiv.appendChild(teamNameSpan);
+  teamDiv.appendChild(manufactureSpan);
+  teamDiv.appendChild(roundsSpan);
+  teamDiv.appendChild(foundingYearSpan);
+
+  // Append the team div to the container
+  teamInfoContainer.appendChild(teamDiv);
+}
