@@ -19,3 +19,8 @@
     grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
   }
 }
+
+span {
+  color: blue;
+  padding: 0.2rem;
+}
