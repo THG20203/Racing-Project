@@ -1,11 +1,8 @@
-/* Container for team info boxes */
+/* Container for team details boxes */
 #team-info {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(20vw, 1fr)
-  ); /* Adjusts columns based on viewport */
-  gap: 2rem; /* Adjust the gap between boxes */
+  grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+  gap: 2rem;
 }
 
 /* Individual team details box styling */
@@ -19,9 +16,6 @@
 /* Media query for responsiveness */
 @media screen and (max-width: 768px) {
   #team-info {
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(30vw, 1fr)
-    ); /* Adjusts columns for smaller screens */
+    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
   }
 }
