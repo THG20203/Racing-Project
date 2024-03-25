@@ -9,10 +9,10 @@ const racingTeams = {
     "TTG Racing",
     "Hexel Racing",
     "Momentum Motorsport",
-    "Apex Alliance Motorsport",
+    "Apex Motorsport",
     "Team Flashpoint Racing",
     "Nitro Blaze Racing",
-    "Apex Power Tools Racing",
+    "Alliance Power Tools Racing",
     "RJJ Racing",
     "Garage 24",
   ],
@@ -34,6 +34,27 @@ const racingTeams = {
     ["Silverstone Race 1", "Silverstone Race 2", "Silverstone Race 3"],
   ],
   foundingYear: [2024, 2021, 2022, 2023, 2020],
+};
+
+const lastRaceGrid = {
+  team: [
+    "TTG Racing",
+    "Apex Alliance Motorsport",
+    "Alliance Power Tools Racing",
+  ],
+  car: [
+    "#86 TG Racing Cars GTS",
+    "#91 Bentley Continental GT3",
+    "#77 BMW M4 GT3",
+  ],
+  drivers: [
+    "Tristan Griffiths",
+    "Benjamin Hayes",
+    "Ethan Harrison",
+    "Lucas Rodriguez",
+    "Seema Shah",
+    "Noah Sullivan",
+  ],
 };
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
