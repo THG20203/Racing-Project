@@ -1,5 +1,9 @@
 "use strict";
 
+// Variables
+const teamInfoContainer = document.getElementById("team-info");
+const lastRaceDescription = document.getElementById("last-race__description");
+
 // Objects
 const racingTeams = {
   team: [
@@ -69,10 +73,6 @@ lastRaceGrid.driversDescription({
   carIndex: 0,
   driverIndex: 0,
 });
-
-// Variables
-const teamInfoContainer = document.getElementById("team-info");
-const lastRaceDescription = document.getElementById("last-race__description");
 
 // Functions
 
