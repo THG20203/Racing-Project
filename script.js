@@ -43,21 +43,32 @@ const lastRaceGrid = {
     "#91 Bentley Continental GT3",
     "#77 BMW M4 GT3",
   ],
-  drivers: {
-    TTGRacing: {
-      driver1: "Tristan Griffiths",
-      driver2: "Benjamin Hayes",
-    },
-    apex: {
-      driver1: "Ethan Harrison",
-      driver2: "Lucas Rodriguez",
-    },
-    alliancePowerTools: {
-      driver1: "Seema Shah",
-      driver2: "Noah Sullivan",
-    },
+  driver: [
+    "Tristan Griffiths",
+    "Benjamin Hayes",
+    "Ethan Harrison",
+    "Lucas Rodriguez",
+    "Seema Shah",
+    "Noah Sullivan",
+  ],
+  driversDescription: function ({
+    round,
+    date,
+    teamIndex,
+    carIndex,
+    driverIndex,
+  }) {
+    console.log(`Test ${this.team[teamIndex]} and ${this.car[carIndex]}`);
   },
 };
+
+lastRaceGrid.driversDescription({
+  round: "Castle Coombe",
+  date: "9th October",
+  teamIndex: 0,
+  carIndex: 0,
+  driverIndex: 0,
+});
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 /* The team and competitiors cards */
