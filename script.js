@@ -1,9 +1,5 @@
 "use strict";
 
-// Variables
-const teamInfoContainer = document.getElementById("team-info");
-const lastRaceDescription = document.getElementById("last-race__description");
-
 // Objects
 const racingTeams = {
   team: [
@@ -52,9 +48,11 @@ const lastRaceGrid = {
     "Seema Shah",
     "Noah Sullivan",
   ],
+  /* once receive data from driversDescription, we immediately desctructure it */
   driversDescription: function ({
     round,
-    date,
+    /* default value - set for desctructuring */
+    date = "5th February",
     teamIndex,
     carIndex,
     driverIndex,
@@ -64,13 +62,19 @@ const lastRaceGrid = {
   },
 };
 
+/* get complete string based on data we passed in, in this single object */
 lastRaceGrid.driversDescription({
   round: "Castle Coombe",
-  date: "9th October",
   teamIndex: 0,
   carIndex: 0,
   driverIndex: 0,
 });
+
+// Variables
+const teamInfoContainer = document.getElementById("team-info");
+const lastRaceDescription = document.getElementById("last-race__description");
+
+// Functions
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 /* The team and competitiors cards */
