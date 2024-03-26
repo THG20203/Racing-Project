@@ -37,24 +37,26 @@ const racingTeams = {
 };
 
 const lastRaceGrid = {
-  team: [
-    "TTG Racing",
-    "Apex Alliance Motorsport",
-    "Alliance Power Tools Racing",
-  ],
+  team: ["TTG Racing", "Apex Motorsport", "Alliance Power Tools Racing"],
   car: [
     "#86 TG Racing Cars GTS",
     "#91 Bentley Continental GT3",
     "#77 BMW M4 GT3",
   ],
-  drivers: [
-    "Tristan Griffiths",
-    "Benjamin Hayes",
-    "Ethan Harrison",
-    "Lucas Rodriguez",
-    "Seema Shah",
-    "Noah Sullivan",
-  ],
+  drivers: {
+    TTGRacing: {
+      driver1: "Tristan Griffiths",
+      driver2: "Benjamin Hayes",
+    },
+    apex: {
+      driver1: "Ethan Harrison",
+      driver2: "Lucas Rodriguez",
+    },
+    alliancePowerTools: {
+      driver1: "Seema Shah",
+      driver2: "Noah Sullivan",
+    },
+  },
 };
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -108,3 +110,6 @@ for (let i = 0; i < racingTeams.team.length; i++) {
   // Append the team div to the container
   teamInfoContainer.appendChild(teamDiv);
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+/* Last Race Podium */
