@@ -2,6 +2,7 @@
 
 // Variables
 const teamInfoContainer = document.getElementById("team-info");
+const lastRaceDescription = document.getElementById("last-race__description");
 
 // Objects
 const racingTeams = {
@@ -58,9 +59,8 @@ const lastRaceGrid = {
     carIndex,
     driverIndex,
   }) {
-    console.log(
-      `${this.driver[driverIndex]} claimed victory in the latest race on the ${date} at the ${round} round of the championship, for the team ${this.team[teamIndex]} driving the ${this.car[carIndex]}.`
-    );
+    const lastRaceSentence = `${this.driver[driverIndex]} claimed victory in the latest race on the ${date} at the ${round} round of the championship, for the team ${this.team[teamIndex]} - driving the ${this.car[carIndex]}.`;
+    lastRaceDescription.textContent = lastRaceSentence;
   },
 };
 
