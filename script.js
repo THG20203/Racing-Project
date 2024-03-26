@@ -58,7 +58,9 @@ const lastRaceGrid = {
     carIndex,
     driverIndex,
   }) {
-    console.log(`Test ${this.team[teamIndex]} and ${this.car[carIndex]}`);
+    console.log(
+      `${this.driver[driverIndex]} claimed victory in the latest race on the ${date} at the ${round} round of the championship, for the team ${this.team[teamIndex]} driving the ${this.car[carIndex]}.`
+    );
   },
 };
 
