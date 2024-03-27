@@ -60,9 +60,11 @@ const lastRaceGrid = {
     date = "5th February",
     teamIndex,
     carIndex,
-    driverIndex,
+    driverIndices,
   }) {
-    const lastRaceSentence = `${this.driver[driverIndex]} claimed victory in the latest race on the ${date} at the ${round} round of the championship, for the team ${this.team[teamIndex]} - driving the ${this.car[carIndex]}.`;
+    const driverNames = driverIndices.map((index) => this.driver[index]);
+    const driverNamesString = driverNames.join(" and ");
+    const lastRaceSentence = `${driverNamesString} claimed victory in the latest race on the ${date} at the ${round} round of the championship, for the team ${this.team[teamIndex]} - driving the ${this.car[carIndex]}.`;
     lastRaceDescription.textContent = lastRaceSentence;
   },
 };
@@ -72,7 +74,7 @@ lastRaceGrid.driversDescription({
   round: "Castle Coombe",
   teamIndex: 0,
   carIndex: 0,
-  driverIndex: 0,
+  driverIndices: [0, 1],
 });
 
 // Functions
