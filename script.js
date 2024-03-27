@@ -3,6 +3,7 @@
 // Variables
 const teamInfoContainer = document.getElementById("team-info");
 const lastRaceDescription = document.getElementById("last-race__description");
+const nextYearDescription = document.getElementById("next-year__description");
 
 // Objects
 const racingTeams = {
@@ -133,5 +134,9 @@ for (let i = 0; i < racingTeams.team.length; i++) {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 /* Next years championship */
-const nextYearsChampionship = ["Test", "Test2", ...racingTeams.team];
-console.log(nextYearsChampionship);
+const nextYearsChampionship = [
+  ...racingTeams.team,
+  "Corsa Competition Racing",
+  "CWR Racing",
+];
+nextYearDescription.textContent = `${nextYearsChampionship.join(", ")}`;
