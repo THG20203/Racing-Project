@@ -136,6 +136,7 @@ for (let i = 0; i < racingTeams.team.length; i++) {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 /* Next years championship */
+/* SPREAD operator used, because on right side of = */
 const nextYearsChampionship = [
   ...racingTeams.team,
   "Corsa Competition Racing",
