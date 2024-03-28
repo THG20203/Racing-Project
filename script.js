@@ -169,7 +169,7 @@ for (let i = 0; i < standingsAndGrid.points.length; i++) {
   row.appendChild(pointsCell);
 
   // Append row to the table body
-  pointsTableContent.appendChild(row);
+  driversTableContent.appendChild(row);
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
