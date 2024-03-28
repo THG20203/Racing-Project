@@ -140,6 +140,9 @@ for (let i = 0; i < racingTeams.team.length; i++) {
 
 /* Standings Section */
 
+////////////
+/* Drivers Table */
+
 /* position variable - need it outside of the for loop so variable doesn't reset to 1 everytime 
 i is incremented i++ */
 let p = 1;
@@ -170,6 +173,17 @@ for (let i = 0; i < standingsAndGrid.points.length; i++) {
 
   // Append row to the table body
   driversTableContent.appendChild(row);
+}
+
+////////////
+/* Team Table */
+
+let pTeam = 1;
+
+for (let i = 0; i <= 3; i++) {
+  const teamPosition = pTeam++;
+  // Create a new row
+  const teamRow = document.createElement("tr");
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
