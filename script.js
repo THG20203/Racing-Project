@@ -184,6 +184,21 @@ for (let i = 0; i <= 3; i++) {
   const teamPosition = pTeam++;
   // Create a new row
   const teamRow = document.createElement("tr");
+
+  const teamPositionCell = document.createElement("td");
+  teamPositionCell.textContent = teamPosition;
+  const teamCell = document.createElement("td");
+  teamCell.textContent = teamName;
+  const teamPointsCell = document.createElement("td");
+  teamPointsCell.textContent = teamPoints;
+
+  // Append cells to the row
+  teamRow.appendChild(teamPositionCell);
+  teamRow.appendChild(teamCell);
+  teamRow.appendChild(teamPointsCell);
+
+  // Append row to the table body
+  driversTableContent.appendChild(teamRow);
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
