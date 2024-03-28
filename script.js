@@ -3,6 +3,7 @@
 // Variables
 const teamInfoContainer = document.getElementById("team-info");
 const lastRaceDescription = document.getElementById("last-race__description");
+const pointsTableContent = document.getElementById("pointsTableContent");
 const nextYearDescription = document.getElementById("next-year__description");
 
 // Objects
@@ -38,7 +39,7 @@ const racingTeams = {
   foundingYear: [2024, 2021, 2022, 2023, 2020],
 };
 
-const lastRaceGrid = {
+const standingsAndGrid = {
   team: ["TTG Racing", "Apex Motorsport", "Alliance Power Tools Racing"],
   car: [
     "#86 TG Racing Cars GTS",
@@ -53,6 +54,7 @@ const lastRaceGrid = {
     "Seema Shah",
     "Noah Sullivan",
   ],
+  points: [186, 151, 144, 120, 85],
   /* once receive data from driversDescription, we immediately desctructure it */
   driversDescription: function ({
     round,
@@ -70,7 +72,7 @@ const lastRaceGrid = {
 };
 
 /* get complete string based on data we passed in, in this single object */
-lastRaceGrid.driversDescription({
+standingsAndGrid.driversDescription({
   round: "Castle Coombe",
   teamIndex: 0,
   carIndex: 0,
@@ -133,6 +135,42 @@ for (let i = 0; i < racingTeams.team.length; i++) {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 /* Last Race Podium */
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* Standings Section */
+
+/* position variable - need it outside of the for loop so variable doesn't reset to 1 everytime 
+i is incremented i++ */
+let p = 1;
+
+for (let i = 0; i < standingsAndGrid.points.length; i++) {
+  // position to loop through
+  const position = p++;
+  // driver variable to loop through
+  const driver = standingsAndGrid.driver[i];
+  // points variable to loop through
+  const points = standingsAndGrid.points[i];
+
+  // Create a new row
+  const row = document.createElement("tr");
+
+  // Create cells for position, driver, and points
+  const positionCell = document.createElement("td");
+  positionCell.textContent = position;
+  const driverCell = document.createElement("td");
+  driverCell.textContent = driver;
+  const pointsCell = document.createElement("td");
+  pointsCell.textContent = points;
+
+  // Append cells to the row
+  row.appendChild(positionCell);
+  row.appendChild(driverCell);
+  row.appendChild(pointsCell);
+
+  // Append row to the table body
+  pointsTableContent.appendChild(row);
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 /* Next years championship */
