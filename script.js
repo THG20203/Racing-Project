@@ -178,6 +178,18 @@ for (let i = 0; i < standingsAndGrid.points.length; i++) {
 ////////////
 /* Team Table */
 
+const [ttgOne, ttgTwo] = standingsAndGrid.points;
+const ttgTotalPoints = ttgOne + ttgTwo;
+console.log("TTG Total Points:", ttgTotalPoints);
+
+const [, , apexOne, apexTwo] = standingsAndGrid.points;
+const apexTotalPoints = apexOne + apexTwo;
+console.log("Apex Total Points:", apexTotalPoints);
+
+const [, , , , allianceOne, allianceTwo] = standingsAndGrid.points;
+const allianceTotalPoints = allianceOne + allianceTwo;
+console.log("Alliance Total Points:", allianceTotalPoints);
+
 let pTeam = 1;
 
 for (let i = 0; i < standingsAndGrid.team.length; i++) {
