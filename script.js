@@ -54,7 +54,7 @@ const standingsAndGrid = {
     "Seema Shah",
     "Noah Sullivan",
   ],
-  points: [186, 151, 144, 120, 85],
+  points: [186, 151, 144, 120, 88, 66],
   /* once receive data from driversDescription, we immediately desctructure it */
   driversDescription: function ({
     round,
@@ -180,8 +180,13 @@ for (let i = 0; i < standingsAndGrid.points.length; i++) {
 
 let pTeam = 1;
 
-for (let i = 0; i <= 3; i++) {
+for (let i = 0; i < standingsAndGrid.team.length; i++) {
+  // team position to loop through
   const teamPosition = pTeam++;
+  // team name to loop through
+  const teamName = standingsAndGrid.team[i];
+  // team points to loop through
+  /* const teamPoints = */
   // Create a new row
   const teamRow = document.createElement("tr");
 
@@ -198,7 +203,7 @@ for (let i = 0; i <= 3; i++) {
   teamRow.appendChild(teamPointsCell);
 
   // Append row to the table body
-  driversTableContent.appendChild(teamRow);
+  teamsTableContent.appendChild(teamRow);
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
