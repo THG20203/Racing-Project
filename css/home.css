@@ -3,13 +3,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   gap: 2rem;
-  margin: 2rem;
 }
 
 /* Individual team details box styling */
 .team-details {
   background-color: #f0f0f0;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
 }

@@ -1,6 +1,7 @@
 "use strict";
 
 // Variables
+const currentYearHeading = document.getElementById("current-year");
 const teamInfoContainer = document.getElementById("team-info");
 const lastRaceDescription = document.getElementById("last-race__description");
 const pointsTableContent = document.getElementById("pointsTableContent");
@@ -80,6 +81,11 @@ standingsAndGrid.driversDescription({
 });
 
 // Functions
+/* Get current year */
+const getCurrentYear = function () {
+  return new Date().getFullYear();
+};
+currentYearHeading.textContent = getCurrentYear() + " ";
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 /* The team and competitiors cards */
