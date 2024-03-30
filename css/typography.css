@@ -1,17 +1,13 @@
-body {
-  /* Set base font size */
-  font-size: 16px;
-}
-
 .heading-1 {
   font-size: 3rem;
   line-height: 1.1;
+  margin: 1rem 0;
 }
 
 p,
 tr,
 td,
 div {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   line-height: 1.6;
 }
