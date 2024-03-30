@@ -1,0 +1,17 @@
+body {
+  /* Set base font size */
+  font-size: 16px;
+}
+
+.heading-1 {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+p,
+tr,
+td,
+div {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
