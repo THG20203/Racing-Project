@@ -1,14 +1,27 @@
+.current-team__section {
+  grid-column: full-start / full-end;
+}
+
+.current-team__heading {
+  text-align: center;
+}
+
 /* Container for team details boxes */
 #team-info {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-  gap: 2rem;
+  gap: 3rem;
 }
 
 /* Individual team details box styling */
 .team-details {
   background-color: #f0f0f0;
-  padding: 2rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+}
+
+.team-descriptions {
+  padding: 0.3rem;
 }

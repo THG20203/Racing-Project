@@ -97,6 +97,7 @@ for (let i = 0; i < racingTeams.team.length; i++) {
   // Team Name
   const teamNameSpan = document.createElement("span");
   teamNameSpan.textContent = "Team Name: " + racingTeams.team[i];
+  teamNameSpan.classList.add("team-descriptions");
 
   // Manufacture
   let chooseManufacture;
@@ -109,6 +110,7 @@ for (let i = 0; i < racingTeams.team.length; i++) {
   }
   const manufactureSpan = document.createElement("span");
   manufactureSpan.textContent = "Manufacture: " + chooseManufacture;
+  manufactureSpan.classList.add("team-descriptions");
 
   // Rounds
   let [
@@ -122,12 +124,14 @@ for (let i = 0; i < racingTeams.team.length; i++) {
   let allRounds = `${round1}, ${round2}, ${round3a}, ${round3b}, ${round4}, ${round5}, ${round6a}, ${round6b}, ${round6c}`;
   const roundsSpan = document.createElement("span");
   roundsSpan.textContent = "Rounds: " + allRounds;
+  roundsSpan.classList.add("team-descriptions");
 
   // Founding Year
   const foundingYear =
     racingTeams.foundingYear[i % racingTeams.foundingYear.length];
   const foundingYearSpan = document.createElement("span");
   foundingYearSpan.textContent = "Founding Year: " + foundingYear;
+  foundingYearSpan.classList.add("team-descriptions");
 
   // Append all information to the team div
   teamDiv.appendChild(teamNameSpan);
