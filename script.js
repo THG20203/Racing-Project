@@ -5,6 +5,7 @@ const currentYearHeading = document.getElementById("current-year");
 const teamInfoContainer = document.getElementById("team-info");
 const lastRaceDescription = document.getElementById("last-race__description");
 const pointsTableContent = document.getElementById("pointsTableContent");
+const nextYearHeading = document.getElementById("next-year");
 const nextYearDescription = document.getElementById("next-year__description");
 
 // Objects
@@ -91,8 +92,7 @@ currentYearHeading.textContent = getCurrentYear() + " ";
 const getNextYear = function () {
   return new Date().getFullYear() + 1;
 };
-getNextYear();
-console.log(getNextYear());
+nextYearHeading.textContent = getNextYear() + " ";
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 /* The team and competitiors cards */
