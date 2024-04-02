@@ -40,7 +40,11 @@ div {
   line-height: 1.6;
 }
 
-tr,
-td {
+th,
+tr {
   text-align: left;
+  padding: 1rem;
+}
+td {
+  padding: 0.5rem 1rem;
 }
