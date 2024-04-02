@@ -12,3 +12,9 @@ div {
   font-size: 1.6rem;
   line-height: 1.6;
 }
+
+.after-heading__rule {
+  height: 1px;
+  width: 100%;
+  background-color: var(--ultramarine-blue);
+}

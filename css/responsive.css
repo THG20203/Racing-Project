@@ -24,8 +24,6 @@
 /* Styles for small desktops */
 @media only screen and (min-width: 1440px) {
   .current-team__content {
-    display: grid;
-    height: min-content;
     grid-column: content-start / content-end;
   }
 }

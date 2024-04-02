@@ -16,6 +16,34 @@
     1fr [content-end] 12vw [full-end];
 }
 
+.current-team__content {
+  display: grid;
+  height: min-content;
+  grid-column: full-start / full-end;
+}
+
+.current-team__header--container {
+  display: flex;
+  position: relative;
+  margin: 0 3rem;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.current-team__header::before {
+  position: absolute;
+  background-position: center center;
+  background-size: 5rem;
+  content: "";
+  display: block;
+  height: 19px;
+  width: 5rem;
+  top: 3.75rem;
+  left: -1rem;
+  background-image: url("../img/right-arrow.svg");
+}
+
 /* Container for team details boxes */
 #team-info {
   display: grid;
