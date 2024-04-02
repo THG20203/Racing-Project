@@ -16,10 +16,6 @@
     1fr [content-end] 12vw [full-end];
 }
 
-.current-team__heading {
-  text-align: center;
-}
-
 /* Container for team details boxes */
 #team-info {
   display: grid;
