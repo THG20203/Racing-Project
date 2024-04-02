@@ -12,22 +12,22 @@
   );
   display: grid;
   grid-template-columns:
-    [full-start] 12vw [content-start]
-    1fr [content-end] 12vw [full-end];
+    [full-start] 15vw [content-start]
+    1fr [content-end] 15vw [full-end];
 }
 
 .current-team__content {
   display: grid;
   height: min-content;
   grid-column: full-start / full-end;
-  margin: 3rem;
+  margin: 1rem;
 }
 
 /* Container for team details boxes */
 #team-info {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-  gap: 3rem;
+  gap: 1rem;
 }
 
 /* Individual team details box styling */
@@ -45,7 +45,7 @@
 
 /* Last race section */
 .last-race__section {
-  margin: 3rem;
+  margin: 3rem 0;
   grid-column: full-start / full-end;
 }
 
@@ -68,13 +68,13 @@
   );
   display: grid;
   grid-template-columns:
-    [full-start] 12vw [content-start]
-    1fr [content-end] 12vw [full-end];
+    [full-start] 15vw [content-start]
+    1fr [content-end] 15vw [full-end];
 }
 
 /* content of table container */
 .table__content {
-  margin: 3rem;
+  margin: 3rem 0;
   display: grid;
   height: min-content;
   grid-column: full-start / full-end;
@@ -89,7 +89,7 @@
 
 /* Next year section */
 .next-year__section {
-  margin: 3rem;
+  margin: 3rem 0;
   grid-column: full-start / full-end;
 }
 
