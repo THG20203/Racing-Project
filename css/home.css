@@ -72,7 +72,7 @@
 }
 
 /* content of table container */
-.table___content {
+.table__content {
   display: grid;
   height: min-content;
   grid-column: full-start / full-end;
@@ -81,6 +81,7 @@
 /* putting tables side by side */
 .table__layout {
   display: flex;
+  flex-direction: column;
 }
 
 /* Next year section */

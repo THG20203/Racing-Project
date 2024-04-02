@@ -26,15 +26,17 @@
 
 /* Styles for small desktops */
 @media only screen and (min-width: 1440px) {
+  .heading-container {
+    margin: 0;
+  }
+  /* current teams */
   .current-team__content {
     grid-column: content-start / content-end;
   }
   #team-info {
     margin: 3rem 0;
   }
-  .heading-container {
-    margin: 0;
-  }
+  /* last team section */
   .last-race__section {
     grid-column: content-start / content-end;
     margin: 3rem 0;
@@ -42,10 +44,12 @@
   .last-race__content {
     margin: 0;
   }
+  /* table section */
   .table__content {
     grid-column: content-start / content-end;
     margin: 3rem 0;
   }
+  /* next year section */
   .next-year__section {
     grid-column: content-start / content-end;
     margin: 3rem 0;
