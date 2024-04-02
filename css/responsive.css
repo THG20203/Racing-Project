@@ -23,7 +23,11 @@
 
 /* Styles for small desktops */
 @media only screen and (min-width: 1440px) {
-  /* Add styles for small desktops here */
+  .current-team__content {
+    display: grid;
+    height: min-content;
+    grid-column: content-start / content-end;
+  }
 }
 
 /* Styles for big desktops */

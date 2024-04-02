@@ -10,6 +10,10 @@
     #e5e5f7 0,
     #e5e5f7 50%
   );
+  display: grid;
+  grid-template-columns:
+    [full-start] 12vw [content-start]
+    1fr [content-end] 12vw [full-end];
 }
 
 .current-team__heading {

@@ -28,10 +28,10 @@ body {
 .home-container {
   display: grid;
   grid-template-columns:
-    [full-start] 10vw [content-start] minmax(4rem, 1fr) [center-start] repeat(
+    [full-start] 12vw [content-start] minmax(4rem, 1fr) [center-start] repeat(
       8,
       [col-start] minmax(min-content, 20rem) [col-end]
     )
-    [center-end] minmax(4rem, 1fr) [content-end] 10vw [full-end];
+    [center-end] minmax(4rem, 1fr) [content-end] 12vw [full-end];
   grid-template-rows: repeat(auto-fill, minmax(min-content, 1fr));
 }
