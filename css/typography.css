@@ -2,7 +2,6 @@
   display: flex;
   position: relative;
   margin: 0 3rem;
-  white-space: nowrap;
   align-items: center;
   justify-content: center;
 }
