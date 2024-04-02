@@ -23,9 +23,10 @@
   .table__layout {
     flex-direction: row;
     /* center content vertically */
-    align-items: center;
+    align-items: start;
     /* center content horizontally */
     justify-content: center;
+    column-gap: 5rem;
   }
 }
 

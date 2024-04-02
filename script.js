@@ -42,7 +42,7 @@ const racingTeams = {
 };
 
 const standingsAndGrid = {
-  team: ["TTG Racing", "Apex Motorsport", "Alliance Power Tools Racing"],
+  team: ["TTG Racing", "Apex Motorsport", "Nitro Blaze Racing"],
   car: [
     "#86 TG Racing Cars GTS",
     "#91 Bentley Continental GT3",
