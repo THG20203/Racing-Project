@@ -1,15 +1,15 @@
 /* Current team section */
 .current-team__section {
   grid-column: full-start / full-end;
-  background-color: #e5e5f7;
+
   opacity: 0.9;
   background-size: 10px 10px;
   background-image: repeating-linear-gradient(
     45deg,
-    #cac9e5 0,
-    #cccce6 1px,
-    #e5e5f7 0,
-    #e5e5f7 50%
+    #dadada 0,
+    #d7d7d7 1px,
+    #efefef 0,
+    #f2f2f2 50%
   );
   display: grid;
   grid-template-columns:
@@ -33,7 +33,7 @@
 
 /* Individual team details box styling */
 .team-details {
-  background-color: #f0f0f0;
+  background-color: var(--off-white);
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -58,10 +58,10 @@
   background-size: 10px 10px;
   background-image: repeating-linear-gradient(
     -45deg,
-    #cac9e5 0,
-    #cccce6 1px,
-    #e5e5f7 0,
-    #e5e5f7 50%
+    #dadada 0,
+    #d7d7d7 1px,
+    #efefef 0,
+    #f2f2f2 50%
   );
   display: grid;
   grid-template-columns:
