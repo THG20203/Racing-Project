@@ -4,6 +4,9 @@
 /* Styles for large mobile devices */
 @media only screen and (min-width: 481px) {
   /* Add styles for large mobile devices here */
+  #team-info {
+    margin: 0 3rem;
+  }
 }
 
 /* Styles for small tablets */
@@ -14,6 +17,10 @@
   }
   .table__layout {
     flex-direction: row;
+    /* center content vertically */
+    align-items: center;
+    /* center content horizontally */
+    justify-content: center;
   }
 }
 

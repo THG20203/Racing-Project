@@ -26,9 +26,8 @@
 /* Container for team details boxes */
 #team-info {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   gap: 3rem;
-  margin: 0 3rem;
 }
 
 /* Individual team details box styling */
