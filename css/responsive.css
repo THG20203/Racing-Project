@@ -12,14 +12,6 @@
   .current-team__content {
     margin: 3rem;
   }
-}
-
-/* Styles for small tablets */
-@media only screen and (min-width: 768px) {
-  /* Add styles for small tablets here */
-  .heading-container {
-    white-space: nowrap;
-  }
   .table__layout {
     flex-direction: row;
     /* center content vertically */
@@ -27,6 +19,14 @@
     /* center content horizontally */
     justify-content: center;
     column-gap: 5rem;
+  }
+}
+
+/* Styles for small tablets */
+@media only screen and (min-width: 768px) {
+  /* Add styles for small tablets here */
+  .heading-container {
+    white-space: nowrap;
   }
 }
 
@@ -51,6 +51,9 @@
   }
   #team-info {
     margin: 3rem 0;
+  }
+  .table__layout {
+    column-gap: 10rem;
   }
   /* last team section */
   .last-race__section {
