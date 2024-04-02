@@ -2,7 +2,7 @@
 .current-team__section {
   grid-column: full-start / full-end;
   background-color: #e5e5f7;
-  opacity: 0.8;
+  opacity: 0.9;
   background-size: 10px 10px;
   background-image: repeating-linear-gradient(
     45deg,
@@ -21,6 +21,7 @@
   display: grid;
   height: min-content;
   grid-column: full-start / full-end;
+  z-index: 2;
 }
 
 /* Container for team details boxes */
@@ -52,9 +53,20 @@
 
 /* Table section */
 .table__section {
-  margin: 3rem;
   grid-column: full-start / full-end;
+  background-color: #e5e5f7;
+  opacity: 0.9;
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #cac9e5 0,
+    #cccce6 1px,
+    #e5e5f7 0,
+    #e5e5f7 50%
+  );
 }
+
+/* grid-column: full-start / full-end; */
 
 /* Next year section */
 .next-year__section {
