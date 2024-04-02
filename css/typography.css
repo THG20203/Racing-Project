@@ -1,8 +1,36 @@
+.heading-container {
+  display: flex;
+  position: relative;
+  margin: 0 3rem;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .heading-1 {
   font-size: 3rem;
   line-height: 1.1;
   margin: 3rem;
   text-transform: uppercase;
+}
+
+.heading-1::before {
+  position: absolute;
+  background-position: center center;
+  background-size: 5rem;
+  content: "";
+  display: block;
+  height: 19px;
+  width: 5rem;
+  top: 3.75rem;
+  left: -1rem;
+  background-image: url("../img/right-arrow.svg");
+}
+
+.after-heading__rule {
+  height: 1px;
+  width: 100%;
+  background-color: var(--ultramarine-blue);
 }
 
 p,
@@ -11,10 +39,4 @@ td,
 div {
   font-size: 1.6rem;
   line-height: 1.6;
-}
-
-.after-heading__rule {
-  height: 1px;
-  width: 100%;
-  background-color: var(--ultramarine-blue);
 }

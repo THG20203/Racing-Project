@@ -26,6 +26,12 @@
   .current-team__content {
     grid-column: content-start / content-end;
   }
+  #team-info {
+    margin: 3rem 0;
+  }
+  .heading-container {
+    margin: 0;
+  }
 }
 
 /* Styles for big desktops */
