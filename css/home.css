@@ -69,10 +69,16 @@
     1fr [content-end] 12vw [full-end];
 }
 
+/* content of table container */
 .table___content {
   display: grid;
   height: min-content;
   grid-column: full-start / full-end;
+}
+
+/* putting tables side by side */
+.table__layout {
+  display: flex;
 }
 
 /* Next year section */
