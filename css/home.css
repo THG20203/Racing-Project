@@ -21,7 +21,6 @@
   display: grid;
   height: min-content;
   grid-column: full-start / full-end;
-  z-index: 2;
 }
 
 /* Container for team details boxes */
@@ -64,9 +63,17 @@
     #e5e5f7 0,
     #e5e5f7 50%
   );
+  display: grid;
+  grid-template-columns:
+    [full-start] 12vw [content-start]
+    1fr [content-end] 12vw [full-end];
 }
 
-/* grid-column: full-start / full-end; */
+.table___content {
+  display: grid;
+  height: min-content;
+  grid-column: full-start / full-end;
+}
 
 /* Next year section */
 .next-year__section {
