@@ -1,0 +1,32 @@
+/* Styles for small mobile devices */
+/* No media query needed, these styles are applied by default */
+
+/* Styles for large mobile devices */
+@media only screen and (min-width: 481px) {
+  /* Add styles for large mobile devices here */
+}
+
+/* Styles for small tablets */
+@media only screen and (min-width: 768px) {
+  /* Add styles for small tablets here */
+}
+
+/* Styles for large tablets */
+@media only screen and (min-width: 992px) {
+  /* Add styles for large tablets here */
+}
+
+/* Styles for laptops */
+@media only screen and (min-width: 1200px) {
+  /* Add styles for laptops here */
+}
+
+/* Styles for small desktops */
+@media only screen and (min-width: 1440px) {
+  /* Add styles for small desktops here */
+}
+
+/* Styles for big desktops */
+@media only screen and (min-width: 1680px) {
+  /* Add styles for big desktops here */
+}
