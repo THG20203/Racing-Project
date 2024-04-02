@@ -87,6 +87,13 @@ const getCurrentYear = function () {
 };
 currentYearHeading.textContent = getCurrentYear() + " ";
 
+/* Get next year */
+const getNextYear = function () {
+  return new Date().getFullYear() + 1;
+};
+getNextYear();
+console.log(getNextYear());
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 /* The team and competitiors cards */
 for (let i = 0; i < racingTeams.team.length; i++) {

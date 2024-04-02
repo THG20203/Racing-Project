@@ -39,6 +39,9 @@
     grid-column: content-start / content-end;
     margin: 3rem 0;
   }
+  .last-race__content {
+    margin: 0;
+  }
   .table__content {
     grid-column: content-start / content-end;
     margin: 3rem 0;
@@ -46,6 +49,9 @@
   .next-year__section {
     grid-column: content-start / content-end;
     margin: 3rem 0;
+  }
+  .next-year__content {
+    margin: 0;
   }
 }
 

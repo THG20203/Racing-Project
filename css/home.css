@@ -48,6 +48,10 @@
   grid-column: full-start / full-end;
 }
 
+.last-race__content {
+  margin: 0 3rem;
+}
+
 /* Table section */
 .table__section {
   grid-column: full-start / full-end;
@@ -83,4 +87,8 @@
 .next-year__section {
   margin: 3rem;
   grid-column: full-start / full-end;
+}
+
+.next-year__content {
+  margin: 0 3rem;
 }
