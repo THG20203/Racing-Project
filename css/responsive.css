@@ -12,6 +12,9 @@
   .heading-container {
     white-space: nowrap;
   }
+  .table__layout {
+    flex-direction: row;
+  }
 }
 
 /* Styles for large tablets */

@@ -20,6 +20,7 @@
   display: grid;
   height: min-content;
   grid-column: full-start / full-end;
+  margin: 3rem;
 }
 
 /* Container for team details boxes */
@@ -27,7 +28,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   gap: 3rem;
-  margin: 3rem;
+  margin: 0 3rem;
 }
 
 /* Individual team details box styling */
@@ -45,6 +46,7 @@
 
 /* Last race section */
 .last-race__section {
+  margin: 3rem;
   grid-column: full-start / full-end;
 }
 
@@ -73,6 +75,7 @@
 
 /* content of table container */
 .table__content {
+  margin: 3rem;
   display: grid;
   height: min-content;
   grid-column: full-start / full-end;
@@ -82,6 +85,7 @@
 .table__layout {
   display: flex;
   flex-direction: column;
+  margin: 0 3rem;
 }
 
 /* Next year section */
