@@ -32,6 +32,14 @@
   .heading-container {
     margin: 0;
   }
+  .last-race__section {
+    grid-column: content-start / content-end;
+    margin: 0;
+  }
+  .table__section {
+    grid-column: content-start / content-end;
+    margin: 0;
+  }
 }
 
 /* Styles for big desktops */
