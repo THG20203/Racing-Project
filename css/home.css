@@ -1,7 +1,6 @@
 /* Current team section */
 .current-team__section {
   grid-column: full-start / full-end;
-
   opacity: 0.9;
   background-size: 5px 5px;
   background-image: repeating-linear-gradient(
@@ -46,7 +45,6 @@
 
 /* Last race section */
 .last-race__section {
-  margin: 3rem;
   grid-column: full-start / full-end;
 }
 
