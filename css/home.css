@@ -55,3 +55,9 @@
   margin: 3rem;
   grid-column: full-start / full-end;
 }
+
+/* Next year section */
+.next-year__section {
+  margin: 3rem;
+  grid-column: full-start / full-end;
+}
