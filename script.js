@@ -89,10 +89,8 @@ const getCurrentYear = function () {
 currentYearHeading.textContent = getCurrentYear() + " ";
 
 /* Get next year */
-const getNextYear = function () {
-  return new Date().getFullYear() + 1;
-};
-nextYearHeading.textContent = getNextYear() + " ";
+const getNextYear = getCurrentYear() + 1;
+nextYearHeading.textContent = getNextYear + " ";
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 /* The team and competitiors cards */
