@@ -36,7 +36,7 @@
   padding: 3rem;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
 }
 
 .team-descriptions {
@@ -84,8 +84,16 @@
 .table__layout {
   display: flex;
   flex-direction: column;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   row-gap: 5rem;
+  align-self: center;
+}
+
+table {
+  border: 1px solid #ccc;
+  background-color: var(--off-white);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+  width: 95%;
 }
 
 /* Next year section */

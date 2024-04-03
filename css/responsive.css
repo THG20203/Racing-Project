@@ -18,7 +18,11 @@
     align-items: start;
     /* center content horizontally */
     justify-content: center;
-    column-gap: 10rem;
+    column-gap: 5rem;
+    margin: 3rem;
+  }
+  table {
+    width: 50%;
   }
 }
 
@@ -53,7 +57,7 @@
     margin: 3rem 0;
   }
   .table__layout {
-    column-gap: 15rem;
+    column-gap: 10rem;
   }
   /* last team section */
   .last-race__section {
