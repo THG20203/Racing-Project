@@ -9,9 +9,6 @@
     grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     gap: 3rem;
   }
-  .current-team__content {
-    margin: 3rem;
-  }
   .table__layout {
     flex-direction: row;
     /* center content vertically */
@@ -19,7 +16,6 @@
     /* center content horizontally */
     justify-content: center;
     column-gap: 5rem;
-    margin: 3rem;
   }
   table {
     width: 50%;
