@@ -107,7 +107,14 @@ table {
 }
 
 .track-background {
-  width: 100vw;
+  grid-column: content-start / content-end;
   height: 50rem;
   background-image: url("../img/track-background.png");
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.racing-car {
+  position: absolute;
+  top: 25%;
 }
