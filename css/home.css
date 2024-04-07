@@ -67,6 +67,7 @@
 .car-track {
   position: relative;
   width: 100%;
+  cursor: pointer;
 }
 
 .zoom-in {
