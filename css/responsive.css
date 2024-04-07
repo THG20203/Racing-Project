@@ -16,9 +16,12 @@
     /* center content horizontally */
     justify-content: center;
     column-gap: 5rem;
+    justify-self: auto;
   }
   table {
     width: 50%;
+  }
+  .last-race__content {
   }
 }
 
@@ -76,9 +79,15 @@
   .next-year__content {
     margin: 0;
   }
+  .racing-car {
+    width: clamp(50rem, 100%, 70rem);
+  }
 }
 
 /* Styles for big desktops */
 @media only screen and (min-width: 1680px) {
   /* Add styles for big desktops here */
+  .racing-car {
+    width: clamp(70rem, 100%, 80rem);
+  }
 }
