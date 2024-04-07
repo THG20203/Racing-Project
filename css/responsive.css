@@ -17,7 +17,7 @@
     justify-content: center;
     column-gap: 5rem;
     justify-self: auto;
-    margin: 0 3rem;
+    margin: 3rem;
   }
   table {
     width: 50%;
@@ -75,7 +75,7 @@
     margin: 3rem 0;
   }
   .last-race__content {
-    margin: 0;
+    margin: 3rem 1rem;
   }
   /* table section */
   .table__content {
@@ -83,7 +83,7 @@
     margin: 3rem 0;
   }
   .table__layout {
-    margin: 0rem 0.5rem;
+    margin: 3rem 1rem;
   }
   /* next year section */
   .next-year__section {
@@ -91,7 +91,7 @@
     margin: 3rem 0;
   }
   .next-year__content {
-    margin: 0;
+    margin: 3rem 1rem;
   }
   .racing-car {
     width: clamp(50rem, 100%, 70rem);

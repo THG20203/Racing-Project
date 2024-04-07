@@ -20,7 +20,7 @@
   display: grid;
   height: min-content;
   grid-column: full-start / full-end;
-  margin: 1rem 1rem 3rem;
+  margin: 3rem 1rem;
 }
 
 /* Container for team details boxes */
@@ -107,7 +107,7 @@
 .table__layout {
   display: flex;
   flex-direction: column;
-  margin: 0 0.5rem;
+  margin: 3rem 0.5rem 0;
   row-gap: 5rem;
   justify-self: center;
 }
@@ -126,5 +126,5 @@ table {
 }
 
 .next-year__content {
-  margin: 0 3rem;
+  margin: 3rem;
 }
