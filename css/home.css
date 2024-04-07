@@ -46,7 +46,7 @@
 /* Last race section */
 .last-race__section {
   grid-column: full-start / full-end;
-  background-image: url("../img/racing-car.png");
+  background-color: black;
   display: grid;
   grid-template-columns:
     [full-start] 15vw [content-start]

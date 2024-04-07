@@ -70,6 +70,7 @@ const standingsAndGrid = {
     const driverNamesString = driverNames.join(" and ");
     const lastRaceSentence = `${driverNamesString} claimed victory in the latest race on the ${date} at ${round}, for the team ${this.team[teamIndex]} - driving the ${this.car[carIndex]}.`;
     lastRaceDescription.textContent = lastRaceSentence;
+    lastRaceDescription.classList.add("text-light");
   },
 };
 
