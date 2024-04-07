@@ -241,3 +241,4 @@ const nextYearsChampionship = [
   "CWR Racing",
 ];
 nextYearDescription.textContent = `${nextYearsChampionship.join(", ")}`;
+nextYearDescription.classList.add("text-light");

@@ -29,7 +29,18 @@
 .after-heading__rule {
   height: 1px;
   width: 100%;
+}
+
+.after-heading__rule--light {
+  background-color: var(--off-white);
+}
+
+.after-heading__rule--dark {
   background-color: var(--ultramarine-blue);
+}
+
+.text-light {
+  color: var(--off-white);
 }
 
 p,

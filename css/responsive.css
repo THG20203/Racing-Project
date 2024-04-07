@@ -70,7 +70,7 @@
     column-gap: 10rem;
   }
   /* last team section */
-  .last-race__section {
+  .last-race__container {
     grid-column: content-start / content-end;
     margin: 3rem 0;
   }

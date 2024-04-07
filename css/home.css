@@ -45,8 +45,20 @@
 
 /* Last race section */
 .last-race__section {
+  grid-column: full-start / full-end;
+  background-image: url("../img/racing-car.png");
+  display: grid;
+  grid-template-columns:
+    [full-start] 15vw [content-start]
+    1fr [content-end] 15vw [full-end];
+  background-repeat: no-repeat;
+}
+
+.last-race__container {
   margin: 3rem 0;
   grid-column: full-start / full-end;
+  z-index: 0;
+  position: relative;
 }
 
 .last-race__content {
@@ -124,6 +136,7 @@ table {
 .next-year__section {
   margin: 3rem 0;
   grid-column: full-start / full-end;
+  background-color: black;
 }
 
 .next-year__content {
