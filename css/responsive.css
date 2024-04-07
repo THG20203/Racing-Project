@@ -86,7 +86,7 @@
     margin: 3rem 1rem;
   }
   /* next year section */
-  .next-year__section {
+  .next-year__container {
     grid-column: content-start / content-end;
     margin: 3rem 0;
   }
