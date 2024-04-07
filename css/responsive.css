@@ -22,6 +22,7 @@
     width: 50%;
   }
   .last-race__content {
+    margin: 0 3rem;
   }
 }
 
@@ -30,6 +31,15 @@
   /* Add styles for small tablets here */
   .heading-container {
     white-space: nowrap;
+  }
+  .last-race__content {
+    flex-direction: row;
+  }
+  .car-track__container {
+    margin: 0;
+  }
+  .car-track {
+    width: 60rem;
   }
 }
 
