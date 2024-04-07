@@ -20,7 +20,7 @@
   display: grid;
   height: min-content;
   grid-column: full-start / full-end;
-  margin: 1rem;
+  margin: 1rem 1rem 3rem;
 }
 
 /* Container for team details boxes */

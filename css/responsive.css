@@ -17,6 +17,7 @@
     justify-content: center;
     column-gap: 5rem;
     justify-self: auto;
+    margin: 0 3rem;
   }
   table {
     width: 50%;
@@ -80,6 +81,9 @@
   .table__content {
     grid-column: content-start / content-end;
     margin: 3rem 0;
+  }
+  .table__layout {
+    margin: 0rem 0.5rem;
   }
   /* next year section */
   .next-year__section {
