@@ -110,30 +110,30 @@ zoomIn.addEventListener("click", () => {
   /* to do with removing original car image */
   carImageContainer.classList.remove("car-track__container--before");
   carImage.classList.remove("car-track__before");
-  carImage.classList.add("car-track__clicked");
+  carImage.classList.add("display-none");
   /* to do with getting rid of looking glass */
-  zoomIn.classList.add("zoom-in__clicked");
+  zoomIn.classList.add("display-none");
   /* to do with adding the overlay */
   overlay.classList.add("overlay__clicked");
   /* to do with adding other image - race car once clicked */
-  raceCar.classList.remove("race-car__hidden");
+  raceCar.classList.remove("display-none");
   raceCar.classList.add("race-car__centered");
-  raceCarClose.classList.remove("button-hidden");
+  raceCarClose.classList.remove("display-none");
 });
 
 raceCarClose.addEventListener("click", () => {
   /* to do with adding back original car image */
   carImageContainer.classList.add("car-track__container--before");
   carImage.classList.add("car-track__before");
-  carImage.classList.remove("car-track__clicked");
+  carImage.classList.remove("display-none");
   /* to do with adding back the looking glass */
-  zoomIn.classList.remove("zoom-in__clicked");
+  zoomIn.classList.remove("display-none");
   /* to do with removing the overlay */
   overlay.classList.remove("overlay__clicked");
   /* to do with removing other image - race car once clicked */
   raceCar.classList.remove("race-car__centered");
-  raceCar.classList.add("race-car__hidden");
-  raceCarClose.classList.add("button-hidden");
+  raceCar.classList.add("display-none");
+  raceCarClose.classList.add("display-none");
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////

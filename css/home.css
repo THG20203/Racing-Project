@@ -86,10 +86,6 @@
   width: 100%;
 }
 
-.car-track__clicked {
-  display: none;
-}
-
 .zoom-in {
   position: absolute;
   bottom: 10px;
@@ -99,14 +95,6 @@
 
 .zoom-in:hover {
   transform: translateY(-3px) scale(1.1);
-}
-
-.zoom-in__clicked {
-  display: none;
-}
-
-.race-car__hidden {
-  display: none;
 }
 
 .race-car__container {
@@ -120,10 +108,6 @@
 
 .race-car__centered {
   width: 100vw;
-}
-
-.button-hidden {
-  display: none;
 }
 
 .race-car__close {

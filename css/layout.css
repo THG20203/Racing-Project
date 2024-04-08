@@ -37,3 +37,7 @@ body {
     [center-end] minmax(4rem, 1fr) [content-end] 15vw [full-end];
   grid-template-rows: repeat(auto-fill, minmax(min-content, 1fr));
 }
+
+.display-none {
+  display: none;
+}
