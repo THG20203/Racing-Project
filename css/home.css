@@ -81,9 +81,18 @@
   margin-top: 3rem;
 }
 
-.car-track {
+.car-track__before {
   position: relative;
   width: 100%;
+}
+
+.car-track__clicked {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  z-index: 10;
 }
 
 .zoom-in {

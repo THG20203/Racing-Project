@@ -103,7 +103,8 @@ nextYearHeading.textContent = getNextYear + " ";
 
 //Event Listeners
 zoomIn.addEventListener("click", () => {
-  carImage.style.transform = "scale(2)";
+  carImage.classList.remove("car-track__before");
+  carImage.classList.add("car-track__clicked");
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
