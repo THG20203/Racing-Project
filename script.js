@@ -118,6 +118,7 @@ zoomIn.addEventListener("click", () => {
   /* to do with adding other image - race car once clicked */
   raceCar.classList.remove("race-car__hidden");
   raceCar.classList.add("race-car__centered");
+  raceCarClose.classList.remove("button-hidden");
 });
 
 raceCarClose.addEventListener("click", () => {
@@ -132,6 +133,7 @@ raceCarClose.addEventListener("click", () => {
   /* to do with removing other image - race car once clicked */
   raceCar.classList.remove("race-car__centered");
   raceCar.classList.add("race-car__hidden");
+  raceCarClose.classList.add("button-hidden");
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////

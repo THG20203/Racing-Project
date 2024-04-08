@@ -122,6 +122,10 @@
   width: 100vw;
 }
 
+.button-hidden {
+  display: none;
+}
+
 .race-car__close {
   position: absolute;
   top: 0;
@@ -130,9 +134,13 @@
   cursor: pointer;
   background: none;
   border: none;
-  color: white; /* Adjust color to suit your design */
+  color: var(--off-white);
   font-weight: bold;
   font-size: 1.5em;
+}
+
+.race-car__close:hover {
+  transform: scale(1.4);
 }
 
 .overlay__clicked {
