@@ -114,6 +114,7 @@ zoomIn.addEventListener("click", () => {
   /* to do with getting rid of looking glass */
   zoomIn.classList.add("display-none");
   /* to do with adding the overlay */
+  overlay.classList.remove("display-none");
   overlay.classList.add("overlay__clicked");
   /* to do with adding other image - race car once clicked */
   raceCar.classList.remove("display-none");
@@ -129,6 +130,7 @@ raceCarClose.addEventListener("click", () => {
   /* to do with adding back the looking glass */
   zoomIn.classList.remove("display-none");
   /* to do with removing the overlay */
+  overlay.classList.add("display-none");
   overlay.classList.remove("overlay__clicked");
   /* to do with removing other image - race car once clicked */
   raceCar.classList.remove("race-car__centered");
