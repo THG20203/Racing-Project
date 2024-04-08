@@ -105,8 +105,8 @@ currentYearHeading.textContent = getCurrentYear() + " ";
 const getNextYear = getCurrentYear() + 1;
 nextYearHeading.textContent = getNextYear + " ";
 
-//Event Listeners
-zoomIn.addEventListener("click", () => {
+/* Open car modal */
+const carModal = function () {
   /* to do with removing original car image */
   carImageContainer.classList.remove("car-track__container--before");
   carImage.classList.remove("car-track__before");
@@ -120,9 +120,9 @@ zoomIn.addEventListener("click", () => {
   raceCar.classList.remove("display-none");
   raceCar.classList.add("race-car__centered");
   raceCarClose.classList.remove("display-none");
-});
+};
 
-raceCarClose.addEventListener("click", () => {
+const closeCarModal = function () {
   /* to do with adding back original car image */
   carImageContainer.classList.add("car-track__container--before");
   carImage.classList.add("car-track__before");
@@ -136,6 +136,13 @@ raceCarClose.addEventListener("click", () => {
   raceCar.classList.remove("race-car__centered");
   raceCar.classList.add("display-none");
   raceCarClose.classList.add("display-none");
+};
+
+//Event Listeners
+zoomIn.addEventListener("click", carModal);
+raceCarClose.addEventListener("click", closeCarModal);
+document.addEventListener("keydown", function (e) {
+  console.log(e.key);
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
