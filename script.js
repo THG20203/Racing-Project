@@ -141,9 +141,6 @@ const closeCarModal = function () {
 //Event Listeners
 zoomIn.addEventListener("click", carModal);
 raceCarClose.addEventListener("click", closeCarModal);
-document.addEventListener("keydown", function (e) {
-  console.log(e.key);
-});
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 /* The team and competitiors cards */
