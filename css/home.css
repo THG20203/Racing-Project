@@ -74,11 +74,14 @@
 }
 
 /* Car and track section */
-.car-track__container {
-  position: relative;
+.car-track__container--before {
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
+}
+
+.car-track__container--before {
+  position: relative;
 }
 
 .car-track__before {
@@ -91,7 +94,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
+  width: 100vw;
   z-index: 10;
 }
 

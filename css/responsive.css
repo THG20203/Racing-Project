@@ -36,7 +36,7 @@
   .car-track__container {
     margin: 0;
   }
-  .car-track {
+  .car-track__before {
     width: 60rem;
   }
 }
@@ -93,15 +93,9 @@
   .next-year__content {
     margin: 3rem 1rem;
   }
-  .racing-car {
-    width: clamp(50rem, 100%, 70rem);
-  }
 }
 
 /* Styles for big desktops */
 @media only screen and (min-width: 1680px) {
   /* Add styles for big desktops here */
-  .racing-car {
-    width: clamp(70rem, 100%, 80rem);
-  }
 }
