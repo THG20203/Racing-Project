@@ -58,11 +58,15 @@
 
 p,
 tr,
-td,
-div {
+td {
   font-size: 1.6rem;
   line-height: 1.6;
   margin-bottom: 1rem;
+}
+
+div {
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
 
 th,
