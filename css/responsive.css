@@ -33,9 +33,6 @@
   .heading-container {
     white-space: nowrap;
   }
-  .last-race__content {
-    flex-direction: row;
-  }
   .car-track__container {
     margin: 0;
   }
@@ -47,6 +44,9 @@
 /* Styles for large tablets */
 @media only screen and (min-width: 992px) {
   /* Add styles for large tablets here */
+  .last-race__content {
+    flex-direction: row;
+  }
 }
 
 /* Styles for laptops */

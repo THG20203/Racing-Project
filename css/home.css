@@ -68,6 +68,11 @@
   column-gap: 3rem;
 }
 
+.last-race__description__container {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Car and track section */
 .car-track__container {
   position: relative;
