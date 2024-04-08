@@ -84,7 +84,6 @@
 .car-track {
   position: relative;
   width: 100%;
-  cursor: pointer;
 }
 
 .zoom-in {
@@ -92,6 +91,10 @@
   bottom: 10px;
   right: 10px;
   cursor: pointer;
+}
+
+.zoom-in:hover {
+  transform: translateY(-3px) scale(1.1);
 }
 
 /* Table section */

@@ -7,6 +7,8 @@ const lastRaceDescription = document.getElementById("last-race__description");
 const lastRaceDescription2 = document.getElementById(
   "last-race__description--second"
 );
+const zoomIn = document.querySelector(".zoom-in");
+const carImage = document.querySelector(".car-track");
 const pointsTableContent = document.getElementById("pointsTableContent");
 const nextYearHeading = document.getElementById("next-year");
 const nextYearDescription = document.getElementById("next-year__description");
@@ -98,6 +100,11 @@ currentYearHeading.textContent = getCurrentYear() + " ";
 /* Get next year */
 const getNextYear = getCurrentYear() + 1;
 nextYearHeading.textContent = getNextYear + " ";
+
+//Event Listeners
+zoomIn.addEventListener("click", () => {
+  carImage.style.transform = "scale(2)";
+});
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 /* The team and competitiors cards */
