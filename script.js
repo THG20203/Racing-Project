@@ -76,7 +76,7 @@ const standingsAndGrid = {
     const driverNames = driverIndices.map((index) => this.driver[index]);
     const driverNamesString = driverNames.join(" and ");
     const lastRaceSentence = `${driverNamesString} claimed victory in the latest race on the ${date} at ${round}, for the team ${this.team[teamIndex]} - driving the ${this.car[carIndex]}.`;
-    const lastRaceSentence2 = `Their victory at ${round} showcased their driving ability and also the preparation and teamwork of ${this.team[teamIndex]}. Griffiths and Hayes demonstrated exceptional skill and strategy, solidifying their position as strong competitors in the championship.}`;
+    const lastRaceSentence2 = `Their victory at ${round} showcased their driving ability and also the preparation and teamwork of ${this.team[teamIndex]}. Griffiths and Hayes demonstrated exceptional skill and strategy, solidifying their position as strong competitors in the championship.`;
     lastRaceDescription.textContent = lastRaceSentence;
     lastRaceDescription2.textContent = lastRaceSentence2;
     lastRaceDescription.classList.add("text-light");
