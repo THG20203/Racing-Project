@@ -9,6 +9,7 @@ const lastRaceDescription2 = document.getElementById(
 );
 const zoomIn = document.querySelector(".zoom-in");
 const carImageContainer = document.querySelector(".car-track__container");
+const overlay = document.querySelector(".overlay");
 const carImage = document.querySelector(".car-track");
 const pointsTableContent = document.getElementById("pointsTableContent");
 const nextYearHeading = document.getElementById("next-year");
@@ -107,6 +108,8 @@ zoomIn.addEventListener("click", () => {
   carImageContainer.classList.remove("car-track__container--before");
   carImage.classList.remove("car-track__before");
   carImage.classList.add("car-track__clicked");
+  zoomIn.classList.add("zoom-in__clicked");
+  overlay.classList.add("overlay__clicked");
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
