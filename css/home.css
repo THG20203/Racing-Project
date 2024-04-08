@@ -90,30 +90,6 @@
   display: none;
 }
 
-.race-car__hidden {
-  display: none;
-}
-
-.race-car__centered {
-  position: absolute;
-  top: 150vh;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
-  z-index: 20;
-}
-
-.overlay__clicked {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 500vh;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(3px);
-  z-index: 5;
-}
-
 .zoom-in {
   position: absolute;
   bottom: 10px;
@@ -127,6 +103,47 @@
 
 .zoom-in__clicked {
   display: none;
+}
+
+.race-car__hidden {
+  display: none;
+}
+
+.race-car__container {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  position: absolute;
+  top: 150vh;
+}
+
+.race-car__centered {
+  width: 100vw;
+}
+
+.race-car__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5em;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white; /* Adjust color to suit your design */
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.overlay__clicked {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
 }
 
 /* Table section */
