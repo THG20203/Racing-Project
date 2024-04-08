@@ -78,25 +78,29 @@
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
-  z-index: 2;
-}
-
-.car-track__container--before {
   position: relative;
 }
 
-.car-track__before {
+.car-track {
   position: relative;
   width: 100%;
 }
 
 .car-track__clicked {
+  display: none;
+}
+
+.race-car__hidden {
+  display: none;
+}
+
+.race-car__centered {
   position: absolute;
-  top: 50%;
+  top: 150vh;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
-  z-index: 10;
+  z-index: 20;
 }
 
 .overlay__clicked {

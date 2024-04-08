@@ -10,6 +10,7 @@ const lastRaceDescription2 = document.getElementById(
 const zoomIn = document.querySelector(".zoom-in");
 const carImageContainer = document.querySelector(".car-track__container");
 const overlay = document.querySelector(".overlay");
+const raceCar = document.querySelector(".race-car");
 const carImage = document.querySelector(".car-track");
 const pointsTableContent = document.getElementById("pointsTableContent");
 const nextYearHeading = document.getElementById("next-year");
@@ -108,8 +109,13 @@ zoomIn.addEventListener("click", () => {
   carImageContainer.classList.remove("car-track__container--before");
   carImage.classList.remove("car-track__before");
   carImage.classList.add("car-track__clicked");
+  /* to do with getting rid of looking glass */
   zoomIn.classList.add("zoom-in__clicked");
+  /* to do with overlay */
   overlay.classList.add("overlay__clicked");
+  /* to do with other image - race car once clicked */
+  raceCar.classList.remove("race-car__hidden");
+  raceCar.classList.add("race-car__centered");
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////

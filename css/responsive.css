@@ -36,8 +36,11 @@
   .car-track__container {
     margin: 0;
   }
-  .car-track__before {
+  .car-track {
     width: 60rem;
+  }
+  .race-car__centered {
+    width: 80rem;
   }
 }
 
