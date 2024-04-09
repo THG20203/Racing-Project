@@ -323,3 +323,18 @@ for (let i = 0; i < standingsAndGrid.team.length; i++) {
   // Append row to the table body
   teamsTableContent.appendChild(teamRow);
 }
+
+/* Team chart */
+const chart = function () {
+  const totalScores = [ttgTotalPoints, apexTotalPoints, allianceTotalPoints];
+  const chartTotal = totalScores.reduce((sum, current) => sum + current, 0);
+
+  const ttgPercentage = (totalScores[0] / chartTotal) * 100;
+  const apexPercentage = (totalScores[1] / chartTotal) * 100;
+
+  const chart = document.querySelector(".chart");
+  chart.style.setProperty("--ttg-stop", `${ttgPercentage}%`);
+  chart.style.setProperty("--apex-stop", `${ttgPercentage + apexPercentage}%`);
+};
+
+chart();
