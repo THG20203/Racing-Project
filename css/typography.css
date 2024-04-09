@@ -73,10 +73,17 @@ td {
   margin-bottom: 1rem;
 }
 
-div,
-button {
+div {
   font-size: 1.6rem;
   line-height: 1.6;
+}
+
+button {
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  cursor: pointer;
 }
 
 th,
