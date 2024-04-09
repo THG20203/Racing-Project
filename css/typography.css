@@ -61,6 +61,8 @@
   line-height: 1.1;
   text-transform: uppercase;
   color: var(--off-white);
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 p,

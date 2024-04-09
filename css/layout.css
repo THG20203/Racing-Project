@@ -52,3 +52,7 @@ body {
   opacity: 1;
   filter: blur(0px);
 }
+
+.mg-tp {
+  margin-top: 2rem;
+}

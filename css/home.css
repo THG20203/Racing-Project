@@ -200,6 +200,12 @@ table {
   margin: 3rem;
 }
 
+.partner-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2rem;
+}
+
 .logo-image {
   width: 10vw;
 }
