@@ -41,3 +41,14 @@ body {
 .display-none {
   display: none;
 }
+
+.animate {
+  opacity: 0;
+  filter: blur(5px);
+  transition: 0.5s;
+}
+
+.show-animate .animate {
+  opacity: 1;
+  filter: blur(0px);
+}
