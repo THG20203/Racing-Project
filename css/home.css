@@ -182,6 +182,16 @@ table {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
 }
 
+th,
+tr {
+  text-align: left;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+td {
+  padding: 1rem;
+}
+
 /* Next year section */
 .next-year__section {
   grid-column: full-start / full-end;

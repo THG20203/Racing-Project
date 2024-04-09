@@ -149,13 +149,3 @@ div {
   position: relative;
   color: var(--ultramarine-blue);
 }
-
-th,
-tr {
-  text-align: left;
-  padding: 2rem;
-  border-bottom: 1px solid #ddd;
-}
-td {
-  padding: 2rem;
-}
