@@ -1,7 +1,7 @@
 /* Last race section */
 .last-race__section {
   grid-column: full-start / full-end;
-  background-color: black;
+  background-color: var(--ultramarine-blue);
   display: grid;
   grid-template-columns:
     [full-start] 15vw [content-start]
@@ -188,7 +188,7 @@ table {
   grid-template-columns:
     [full-start] 15vw [content-start]
     1fr [content-end] 15vw [full-end];
-  background-color: black;
+  background-color: var(--ultramarine-blue);
 }
 
 .next-year__container {
