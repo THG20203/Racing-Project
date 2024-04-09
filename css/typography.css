@@ -72,9 +72,9 @@ div {
 th,
 tr {
   text-align: left;
-  padding: 1rem;
+  padding: 2rem;
   border-bottom: 1px solid #ddd;
 }
 td {
-  padding: 0.5rem 1rem;
+  padding: 2rem;
 }

@@ -9,19 +9,6 @@
     grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     gap: 3rem;
   }
-  .table__layout {
-    flex-direction: row;
-    /* center content vertically */
-    align-items: start;
-    /* center content horizontally */
-    justify-content: center;
-    column-gap: 2rem;
-    justify-self: auto;
-    margin: 3rem;
-  }
-  table {
-    width: 50%;
-  }
   .last-race__content {
     margin: 0 3rem;
   }
@@ -49,6 +36,19 @@
   /* Add styles for large tablets here */
   .last-race__content {
     flex-direction: row;
+  }
+  .table__layout {
+    flex-direction: row;
+    /* center content vertically */
+    align-items: start;
+    /* center content horizontally */
+    justify-content: center;
+    column-gap: 2rem;
+    justify-self: auto;
+    margin: 3rem;
+  }
+  table {
+    width: 50%;
   }
 }
 
