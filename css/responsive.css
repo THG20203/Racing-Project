@@ -29,6 +29,10 @@
   .race-car__centered {
     width: 80rem;
   }
+  .partner-logos {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2rem;
+  }
 }
 
 /* Styles for large tablets */

@@ -123,6 +123,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   gap: 1rem;
+  margin: 3rem;
 }
 
 /* Individual team details box styling */
@@ -197,15 +198,16 @@ table {
 }
 
 .next-year__content {
-  margin: 3rem;
+  margin: 1rem 3rem 3rem;
 }
 
 .partner-logos {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 2rem;
+  justify-items: center;
 }
 
 .logo-image {
-  width: 10vw;
+  width: 10rem;
 }
