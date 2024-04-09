@@ -236,7 +236,7 @@ const nextYearsChampionship = [
   "Corsa Competition Racing",
   "CWR Racing",
 ];
-nextYearDescription.textContent = `${nextYearsChampionship.join(", ")}`;
+nextYearDescription.textContent = `${nextYearsChampionship.join(", ")}.`;
 nextYearDescription.classList.add("text-light");
 nextYearDescription.classList.add("animate");
 
