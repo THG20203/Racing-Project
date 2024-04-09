@@ -16,6 +16,20 @@ const carImage = document.querySelector(".car-track");
 const pointsTableContent = document.getElementById("pointsTableContent");
 const nextYearHeading = document.getElementById("next-year");
 const nextYearDescription = document.getElementById("next-year__description");
+const sections = document.querySelectorAll("section");
+
+window.onscroll = () => {
+  sections.forEach((sec) => {
+    /* distance scrolled from scroll bar to top of the page */
+    let scrollDistance = window.scrollY;
+    /* offset = distance from section outer border to top edge of parent.
+    Parent = home container */
+    let secDistance = sec.offsetTop;
+    if (scrollDistance >= secDistance) {
+      sec.classList.add("show-animate");
+    }
+  });
+};
 
 // Objects
 const racingTeams = {
@@ -83,6 +97,8 @@ const standingsAndGrid = {
     lastRaceDescription2.textContent = lastRaceSentence2;
     lastRaceDescription.classList.add("text-light");
     lastRaceDescription2.classList.add("text-light");
+    lastRaceDescription.classList.add("animate");
+    lastRaceDescription2.classList.add("animate");
   },
 };
 
@@ -105,6 +121,16 @@ currentYearHeading.textContent = getCurrentYear() + " ";
 const getNextYear = getCurrentYear() + 1;
 nextYearHeading.textContent = getNextYear + " ";
 
+/* Add Animate class to carImage and Zoom */
+const carAndZoom = function () {
+  carImage.classList.add("animate");
+  zoomIn.classList.add("animate");
+};
+/* above function not producing a value hence not return statement needed */
+carAndZoom();
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+/* Last Race Section */
 /* Open car modal */
 const carModal = function () {
   /* to do with removing original car image */
@@ -153,6 +179,7 @@ for (let i = 0; i < racingTeams.team.length; i++) {
   const teamNameSpan = document.createElement("span");
   teamNameSpan.textContent = "Team Name: " + racingTeams.team[i];
   teamNameSpan.classList.add("team-descriptions");
+  teamNameSpan.classList.add("animate");
 
   // Manufacture
   let chooseManufacture;
@@ -166,6 +193,7 @@ for (let i = 0; i < racingTeams.team.length; i++) {
   const manufactureSpan = document.createElement("span");
   manufactureSpan.textContent = "Manufacture: " + chooseManufacture;
   manufactureSpan.classList.add("team-descriptions");
+  manufactureSpan.classList.add("animate");
 
   // Rounds
   let [
@@ -180,6 +208,7 @@ for (let i = 0; i < racingTeams.team.length; i++) {
   const roundsSpan = document.createElement("span");
   roundsSpan.textContent = "Rounds: " + allRounds;
   roundsSpan.classList.add("team-descriptions");
+  roundsSpan.classList.add("animate");
 
   // Founding Year
   const foundingYear =
@@ -187,6 +216,7 @@ for (let i = 0; i < racingTeams.team.length; i++) {
   const foundingYearSpan = document.createElement("span");
   foundingYearSpan.textContent = "Founding Year: " + foundingYear;
   foundingYearSpan.classList.add("team-descriptions");
+  foundingYearSpan.classList.add("animate");
 
   // Append all information to the team div
   teamDiv.appendChild(teamNameSpan);
@@ -197,6 +227,18 @@ for (let i = 0; i < racingTeams.team.length; i++) {
   // Append the team div to the container
   teamInfoContainer.appendChild(teamDiv);
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+/* Next years championship */
+/* SPREAD operator used, because on right side of = */
+const nextYearsChampionship = [
+  ...racingTeams.team,
+  "Corsa Competition Racing",
+  "CWR Racing",
+];
+nextYearDescription.textContent = `${nextYearsChampionship.join(", ")}`;
+nextYearDescription.classList.add("text-light");
+nextYearDescription.classList.add("animate");
 
 /* Standings Section */
 
@@ -281,14 +323,3 @@ for (let i = 0; i < standingsAndGrid.team.length; i++) {
   // Append row to the table body
   teamsTableContent.appendChild(teamRow);
 }
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-/* Next years championship */
-/* SPREAD operator used, because on right side of = */
-const nextYearsChampionship = [
-  ...racingTeams.team,
-  "Corsa Competition Racing",
-  "CWR Racing",
-];
-nextYearDescription.textContent = `${nextYearsChampionship.join(", ")}`;
-nextYearDescription.classList.add("text-light");
