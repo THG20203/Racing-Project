@@ -62,7 +62,7 @@
   text-transform: uppercase;
   color: var(--off-white);
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 p,
@@ -73,7 +73,8 @@ td {
   margin-bottom: 1rem;
 }
 
-div {
+div,
+button {
   font-size: 1.6rem;
   line-height: 1.6;
 }
