@@ -228,8 +228,8 @@ td {
   border-radius: 50%;
   background: conic-gradient(
     var(--ultramarine-blue) 0% var(--ttg-stop),
-    red var(--ttg-stop) var(--apex-stop),
-    blue var(--apex-stop) 100%
+    var(--scarlet) var(--ttg-stop) var(--apex-stop),
+    var(--yellow) var(--apex-stop) 100%
   );
   position: relative;
 }
