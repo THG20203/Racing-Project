@@ -47,7 +47,7 @@
     align-items: start;
     /* center content horizontally */
     justify-content: center;
-    column-gap: 2rem;
+    column-gap: 3rem;
     justify-self: auto;
     margin: 3rem;
   }
@@ -72,9 +72,6 @@
   }
   #team-info {
     margin: 3rem 0;
-  }
-  .table__layout {
-    column-gap: 5rem;
   }
   /* last team section */
   .last-race__container {

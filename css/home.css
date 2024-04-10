@@ -202,7 +202,7 @@
   display: flex;
   flex-direction: column;
   margin: 3rem 0.5rem 0;
-  row-gap: 5rem;
+  row-gap: 3rem;
   justify-self: center;
 }
 
@@ -222,6 +222,13 @@ td {
   padding: 1rem;
 }
 
+.chart-container {
+  background-color: var(--off-white);
+  padding: 3rem;
+  margin: 0 1rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+
 .chart {
   width: 30rem;
   height: 30rem;
@@ -236,8 +243,8 @@ td {
 
 .chart-center {
   position: absolute;
-  width: 20rem;
-  height: 20rem;
+  width: 23rem;
+  height: 23rem;
   border-radius: 50%;
   background-color: var(--off-white);
   top: 50%;
