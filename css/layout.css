@@ -59,3 +59,13 @@ body {
 .mg-tp {
   margin-top: 2.5rem;
 }
+
+footer {
+  grid-column: full-start / full-end;
+  background-color: var(--ultramarine-blue);
+  text-align: center;
+}
+
+.footer-text {
+  padding: 3rem;
+}

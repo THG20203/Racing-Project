@@ -17,6 +17,7 @@ const pointsTableContent = document.getElementById("pointsTableContent");
 const nextYearHeading = document.getElementById("next-year");
 const nextYearDescription = document.getElementById("next-year__description");
 const sections = document.querySelectorAll("section");
+const footerYear = document.getElementById("footer-year");
 
 window.onscroll = () => {
   sections.forEach((sec) => {
@@ -348,3 +349,6 @@ const chart = function () {
 };
 
 chart();
+
+/* Footer */
+footerYear.textContent = getCurrentYear();
