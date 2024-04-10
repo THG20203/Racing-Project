@@ -231,4 +231,16 @@ td {
     red var(--ttg-stop) var(--apex-stop),
     blue var(--apex-stop) 100%
   );
+  position: relative;
+}
+
+.chart-center {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: var(--off-white);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
