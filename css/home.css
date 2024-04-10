@@ -224,9 +224,21 @@ td {
 
 .chart-container {
   background-color: var(--off-white);
-  margin: 3rem 1rem 0;
+  margin: 3rem 0.5rem 0;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
-  height: min-content;
+  max-width: 95vw;
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+}
+
+.chart-text {
+  margin: 3rem;
+  text-align: center;
+}
+
+.chart-key {
+  display: flex;
+  flex-direction: column;
 }
 
 .chart {
@@ -239,6 +251,7 @@ td {
     var(--yellow) var(--apex-stop) 100%
   );
   position: relative;
+  margin: 3rem;
 }
 
 .chart-center__background {
