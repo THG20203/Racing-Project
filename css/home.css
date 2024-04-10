@@ -218,6 +218,7 @@ tr {
   padding: 1rem;
   border-bottom: 1px solid #ddd;
 }
+
 td {
   padding: 1rem;
 }
@@ -237,8 +238,41 @@ td {
 }
 
 .chart-key {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: min-content max-content;
+  grid-gap: 0.5rem;
+}
+
+.ttg-label {
+  background-color: var(--ultramarine-blue);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center;
+}
+
+.apex-label {
+  background-color: var(--scarlet);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center;
+}
+
+.nitro-label {
+  background-color: var(--yellow);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center;
+}
+
+.key-name {
+  white-space: nowrap;
+  text-align: left;
 }
 
 .chart {
