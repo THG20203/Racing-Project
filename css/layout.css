@@ -16,6 +16,7 @@
   --dark-grey: #02010f;
   --ultramarine-blue: #06054f;
   --off-white: #fcfcfc;
+  --footer-blue: #4850e2;
   --scarlet: #bd0000;
   --yellow: #eadb0e;
 }
@@ -58,14 +59,4 @@ body {
 
 .mg-tp {
   margin-top: 2.5rem;
-}
-
-footer {
-  grid-column: full-start / full-end;
-  background-color: var(--ultramarine-blue);
-  text-align: center;
-}
-
-.footer-text {
-  padding: 3rem;
 }

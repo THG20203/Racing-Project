@@ -1,0 +1,14 @@
+footer {
+  grid-column: full-start / full-end;
+  background-color: var(--ultramarine-blue);
+  text-align: center;
+}
+
+.footer-text {
+  padding: 3rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--footer-blue);
+}
