@@ -49,6 +49,9 @@
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 2rem;
   }
+  .chart-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Styles for large tablets */

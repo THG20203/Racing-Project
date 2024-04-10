@@ -235,13 +235,15 @@ td {
 
 .chart-text {
   margin: 3rem;
+  text-align: center;
 }
 
 .chart-content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, min-content);
   place-items: center;
   max-width: min-content;
+  max-height: min-content;
 }
 
 .chart-key {
