@@ -327,8 +327,18 @@ for (let i = 0; i < standingsAndGrid.team.length; i++) {
 /* Team chart */
 const chart = function () {
   const totalScores = [ttgTotalPoints, apexTotalPoints, allianceTotalPoints];
-  const chartTotal = totalScores.reduce((sum, current) => sum + current, 0);
-
+  /* .reduce() Method: This is an array method in JavaScript used to reduce the 
+  array to a single value */
+  /* sum: The accumulator that accumulates the callback's return values. 
+  It is the accumulated value previously returned in the last invocation 
+  of the callback, or the initial value, 0, if supplied */
+  /* current: The current element being processed in the array. */
+  /* so looping through totalScores with this and not 0 after function with sum and
+  current because its the second argument for reducer - sets the initial 
+  value of the accumulator (sum). */
+  const chartTotal = totalScores.reduce(function (sum, current) {
+    return sum + current;
+  }, 0);
   const ttgPercentage = (totalScores[0] / chartTotal) * 100;
   const apexPercentage = (totalScores[1] / chartTotal) * 100;
 
