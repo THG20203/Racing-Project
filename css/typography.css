@@ -80,6 +80,11 @@
   margin-bottom: 2.5rem;
 }
 
+.heading-4 {
+  font-size: 1.9rem;
+  line-height: 1.1;
+}
+
 p,
 tr,
 td {

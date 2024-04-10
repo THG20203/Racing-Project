@@ -230,8 +230,8 @@ td {
 }
 
 .chart {
-  width: 30rem;
-  height: 30rem;
+  width: 25rem;
+  height: 25rem;
   border-radius: 50%;
   background: conic-gradient(
     var(--ultramarine-blue) 0% var(--ttg-stop),
@@ -243,8 +243,8 @@ td {
 
 .chart-center {
   position: absolute;
-  width: 23rem;
-  height: 23rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
   background-color: var(--off-white);
   top: 50%;
