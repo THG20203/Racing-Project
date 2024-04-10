@@ -17,7 +17,7 @@
 }
 
 .last-race__content {
-  margin: 0 1rem;
+  margin: 0 3rem;
   display: flex;
   flex-direction: column;
   column-gap: 3rem;
@@ -224,14 +224,13 @@ td {
 
 .chart-container {
   background-color: var(--off-white);
-  padding: 3rem;
   margin: 3rem 1rem 0;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
 }
 
 .chart {
-  width: 20rem;
-  height: 20rem;
+  width: 18rem;
+  height: 18rem;
   border-radius: 50%;
   background: conic-gradient(
     var(--ultramarine-blue) 0% var(--ttg-stop),
@@ -243,8 +242,8 @@ td {
 
 .chart-center__background {
   position: absolute;
-  width: 16rem;
-  height: 16rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
   background-color: var(--off-white);
   top: 50%;
@@ -254,8 +253,8 @@ td {
 
 .chart-center {
   position: absolute;
-  width: 15rem;
-  height: 15rem;
+  width: 14rem;
+  height: 14rem;
   border-radius: 50%;
   background-color: var(--dark-grey);
   top: 50%;
