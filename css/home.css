@@ -191,7 +191,7 @@
 
 /* content of table container */
 .table__content {
-  margin: 3rem 0;
+  margin: 3rem 0 6rem;
   display: grid;
   height: min-content;
   grid-column: full-start / full-end;
@@ -201,7 +201,7 @@
 .table__layout {
   display: flex;
   flex-direction: column;
-  margin: 3rem 0.5rem 0;
+  margin: 3rem 0.5rem;
   row-gap: 3rem;
   justify-self: center;
 }
@@ -226,6 +226,7 @@ td {
   background-color: var(--off-white);
   margin: 3rem 1rem 0;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+  height: min-content;
 }
 
 .chart {
@@ -253,8 +254,8 @@ td {
 
 .chart-center {
   position: absolute;
-  width: 14rem;
-  height: 14rem;
+  width: 13rem;
+  height: 13rem;
   border-radius: 50%;
   background-color: var(--dark-grey);
   top: 50%;

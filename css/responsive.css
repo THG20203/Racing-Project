@@ -20,7 +20,7 @@
     justify-content: center;
     column-gap: 3rem;
     justify-self: auto;
-    margin: 3rem;
+    margin: 3rem 3rem 6rem;
   }
   table {
     width: 50%;
@@ -87,7 +87,6 @@
   /* table section */
   .table__content {
     grid-column: content-start / content-end;
-    margin: 3rem 0;
   }
   .table__layout {
     margin: 3rem 1rem;
