@@ -12,6 +12,22 @@
   .last-race__content {
     margin: 0 3rem;
   }
+  .table__layout {
+    flex-direction: row;
+    /* center content vertically */
+    align-items: start;
+    /* center content horizontally */
+    justify-content: center;
+    column-gap: 3rem;
+    justify-self: auto;
+    margin: 3rem;
+  }
+  table {
+    width: 50%;
+  }
+  .chart-container {
+    margin: 0 3rem 0;
+  }
 }
 
 /* Styles for small tablets */
@@ -40,19 +56,6 @@
   /* Add styles for large tablets here */
   .last-race__content {
     flex-direction: row;
-  }
-  .table__layout {
-    flex-direction: row;
-    /* center content vertically */
-    align-items: start;
-    /* center content horizontally */
-    justify-content: center;
-    column-gap: 3rem;
-    justify-self: auto;
-    margin: 3rem;
-  }
-  table {
-    width: 50%;
   }
 }
 
@@ -88,6 +91,9 @@
   }
   .table__layout {
     margin: 3rem 1rem;
+  }
+  .chart-container {
+    margin: 0 1rem;
   }
   /* next year section */
   .next-year__container {
