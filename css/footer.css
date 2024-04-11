@@ -12,3 +12,7 @@ footer {
   text-decoration: none;
   color: var(--footer-blue);
 }
+
+.footer-link:hover {
+  color: var(--light-grey);
+}

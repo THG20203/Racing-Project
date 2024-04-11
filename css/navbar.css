@@ -1,6 +1,5 @@
 .navbar {
   background-color: var(--off-white);
-  color: var(--ultramarine-blue);
   height: 8rem;
 }
 
@@ -16,12 +15,21 @@
 }
 
 .nav-link {
+  color: var(--ultramarine-blue);
   text-decoration: none;
-  padding: 0.5rem 4rem;
+  padding: 0.3rem 4rem;
   font-size: 2rem;
   line-height: 1.6;
   display: block;
   position: relative;
+}
+
+.nav-link:active {
+  color: var(--ultramarine-blue);
+}
+
+.nav-link:hover {
+  color: var(--light-grey);
 }
 
 .nav-link::before {
@@ -38,6 +46,21 @@
   transform-origin: left;
 }
 
-.nav-link:hover::before {
+.nav-link:hover::before,
+.nav-link:hover::after {
   transform: scaleX(1);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--ultramarine-blue);
+  transform: scaleX(0);
+  transition: all 0.5s;
+  /* scale from right rather than default of center */
+  transform-origin: right;
 }
