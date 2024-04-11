@@ -26,7 +26,7 @@
   position: absolute;
   z-index: 1000;
   margin-right: 3rem;
-  /* transform: scale(50); */
+  transition: transform 0.5s;
 }
 
 .navigation__checkbox {
