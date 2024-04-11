@@ -12,21 +12,23 @@
 /* Mobile Background Styles */
 .navigation__button {
   position: absolute;
-  background-color: var(--off-white);
-  height: 5rem;
-  width: 5rem;
+  background-color: var(--ultramarine-blue);
+  height: 6rem;
+  width: 6rem;
   z-index: 2000;
   margin-right: 3rem;
+  display: grid;
+  place-items: center;
 }
 
 .navigation__background {
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5rem;
   background-color: var(--ultramarine-blue);
   position: absolute;
   z-index: 1000;
   margin-right: 3rem;
-  transition: transform 0.5s;
+  transition: transform 0.8s;
 }
 
 .navigation__checkbox {
@@ -43,6 +45,38 @@
   width: 100%;
 }
 
+.navigation__checkbox:checked ~ .navigation__button {
+  background-color: var(--off-white);
+}
+
+.navigation-icon {
+  width: 3rem;
+  height: 2px;
+  background-color: var(--off-white);
+  display: inline-block;
+  position: relative;
+}
+
+.navigation-icon::before {
+  content: "";
+  width: 3rem;
+  height: 2px;
+  background-color: var(--off-white);
+  position: absolute;
+  left: 0;
+  top: -1rem;
+}
+
+.navigation-icon::after {
+  content: "";
+  width: 3rem;
+  height: 2px;
+  background-color: var(--off-white);
+  position: absolute;
+  left: 0;
+  top: 1rem;
+}
+
 .nav-list {
   margin-top: 70vh;
   width: 100%;
@@ -55,6 +89,7 @@
   position: relative;
   opacity: 0;
   width: 0;
+  transition: all 0.8s;
 }
 
 .nav-link {
