@@ -188,6 +188,13 @@ for (let i = 0; i < racingTeams.team.length; i++) {
     /* First team gets "TG Racing Cars" */
     chooseManufacture = racingTeams.manufacture[0];
   } else {
+    /* subtracting 1 from the length, the expression adjusts the 
+    index to be zero-based (since array indices start at 0) */
+    /* modulo operator (%) returns the remainder of the division of 
+    i by (racingTeams.manufacture.length - 1). Cycles  through indices 
+    within a certain range, ensuring that the index doesn't exceed the 
+    upper limit set by the array length minus one */
+    /* + 1 means exclude the first element from array */
     chooseManufacture =
       racingTeams.manufacture[(i % (racingTeams.manufacture.length - 1)) + 1];
   }
