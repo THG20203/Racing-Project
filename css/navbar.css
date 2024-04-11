@@ -1,3 +1,23 @@
 .navbar {
-  background-color: red;
+  background-color: var(--off-white);
+  color: var(--ultramarine-blue);
+  height: 8rem;
+}
+
+.nav-list {
+  display: flex;
+  /* horizontally */
+  justify-content: end;
+  /* vertically */
+  align-items: center;
+  height: 8rem;
+  list-style: none;
+  margin-right: 3rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 2rem;
+  font-size: 2rem;
+  line-height: 1.6;
 }
