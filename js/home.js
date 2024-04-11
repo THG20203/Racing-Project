@@ -260,6 +260,7 @@ for (let i = 0; i < standingsAndGrid.points.length; i++) {
 
   // Create a new row
   const row = document.createElement("tr");
+  row.classList.add("animate");
 
   // Create cells for position, driver, and points
   const positionCell = document.createElement("td");
@@ -308,6 +309,7 @@ for (let i = 0; i < standingsAndGrid.team.length; i++) {
   }
   // Create a new row
   const teamRow = document.createElement("tr");
+  teamRow.classList.add("animate");
 
   const teamPositionCell = document.createElement("td");
   teamPositionCell.textContent = teamPosition;
