@@ -49,6 +49,12 @@
   background-color: var(--off-white);
 }
 
+.navigation__checkbox:checked ~ .navigation__button .navigation-icon,
+.navigation__checkbox:checked ~ .navigation__button .navigation-icon::before,
+.navigation__checkbox:checked ~ .navigation__button .navigation-icon::after {
+  background-color: var(--ultramarine-blue);
+}
+
 .navigation-icon {
   width: 3rem;
   height: 2px;
