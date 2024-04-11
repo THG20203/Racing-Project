@@ -16,6 +16,17 @@
 }
 
 /* Mobile Background Styles */
+.navigation__button {
+  /* horizontally */
+  justify-content: end;
+  /* vertically */
+  align-items: center;
+  position: absolute;
+  background-color: var(--off-white);
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
 .navigation__background {
   height: 5rem;
   width: 5rem;
@@ -26,14 +37,7 @@
   align-items: center;
   background-color: var(--ultramarine-blue);
   position: absolute;
-}
-
-.navigation__button {
-  /* horizontally */
-  justify-content: end;
-  /* vertically */
-  align-items: center;
-  position: absolute;
+  z-index: 1000;
 }
 
 .navigation__checkbox {
