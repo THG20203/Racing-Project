@@ -1,6 +1,12 @@
 .navbar {
   background-color: var(--off-white);
   height: 10rem;
+  display: flex;
+  /* horizontally */
+  justify-content: end;
+  /* vertically */
+  align-items: center;
+  position: relative;
 }
 
 /* Mobile Background Styles */
@@ -10,6 +16,7 @@
   height: 5rem;
   width: 5rem;
   z-index: 2000;
+  margin-right: 3rem;
 }
 
 .navigation__background {
@@ -18,28 +25,31 @@
   background-color: var(--ultramarine-blue);
   position: absolute;
   z-index: 1000;
+  margin-right: 3rem;
 }
 
 .navigation__checkbox {
   position: absolute;
+  margin-right: 3rem;
 }
 
 .nav-list {
-  display: flex;
-  /* horizontally */
-  justify-content: end;
-  /* vertically */
-  align-items: center;
-  height: 10rem;
+  margin-top: 70vh;
+  width: 100%;
+  z-index: 2500;
   list-style: none;
-  margin-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 
 .nav-link {
   color: var(--ultramarine-blue);
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 4rem;
+  padding-bottom: 2rem;
   line-height: 1.6;
   display: block;
   position: relative;

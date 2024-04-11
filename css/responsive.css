@@ -42,10 +42,21 @@
   .navigation__checkbox {
     display: none;
   }
+  .nav-list {
+    height: 10rem;
+    /* horizontally */
+    justify-content: end;
+    /* vertically */
+    align-items: center;
+    width: 100vw;
+    z-index: 3000;
+    margin-top: 0;
+    flex-direction: row;
+  }
   .nav-link {
     padding: 0.5rem 2rem;
+    font-size: 2rem;
   }
-
   .heading-container {
     white-space: nowrap;
   }
