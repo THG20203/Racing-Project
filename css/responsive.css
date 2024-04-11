@@ -52,10 +52,14 @@
     z-index: 3000;
     margin-top: 0;
     flex-direction: row;
+    opacity: 1;
+    width: min-content;
+    margin-right: 3rem;
   }
   .nav-link {
     padding: 0.5rem 2rem;
     font-size: 2rem;
+    color: var(--ultramarine-blue);
   }
   .heading-container {
     white-space: nowrap;

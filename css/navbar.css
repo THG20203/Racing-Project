@@ -26,11 +26,21 @@
   position: absolute;
   z-index: 1000;
   margin-right: 3rem;
+  /* transform: scale(50); */
 }
 
 .navigation__checkbox {
   position: absolute;
   margin-right: 3rem;
+}
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(50);
+}
+
+.navigation__checkbox:checked ~ .nav-list {
+  opacity: 1;
+  width: 100%;
 }
 
 .nav-list {
@@ -43,16 +53,18 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  opacity: 0;
+  width: 0;
 }
 
 .nav-link {
-  color: var(--ultramarine-blue);
   text-decoration: none;
   font-size: 4rem;
   padding-bottom: 2rem;
   line-height: 1.6;
   display: block;
   position: relative;
+  color: var(--off-white);
 }
 
 .nav-link:active {
