@@ -1,6 +1,6 @@
 .navbar {
   background-color: var(--off-white);
-  height: 8rem;
+  height: 10rem;
 }
 
 .nav-list {
@@ -9,9 +9,39 @@
   justify-content: end;
   /* vertically */
   align-items: center;
-  height: 8rem;
+  height: 10rem;
   list-style: none;
   margin-right: 3rem;
+  position: relative;
+}
+
+/* Mobile Background Styles */
+.navigation__background {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  /* horizontally */
+  justify-content: end;
+  /* vertically */
+  align-items: center;
+  background-color: var(--ultramarine-blue);
+  position: absolute;
+}
+
+.navigation__button {
+  /* horizontally */
+  justify-content: end;
+  /* vertically */
+  align-items: center;
+  position: absolute;
+}
+
+.navigation__checkbox {
+  /* horizontally */
+  justify-content: end;
+  /* vertically */
+  align-items: center;
+  position: absolute;
 }
 
 .nav-link {
