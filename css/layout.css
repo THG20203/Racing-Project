@@ -32,7 +32,7 @@ body {
   background-color: var(--off-white);
 }
 
-.home-container {
+.container {
   display: grid;
   grid-template-columns:
     [full-start] 15vw [content-start] minmax(4rem, 1fr) [center-start] repeat(
@@ -40,7 +40,6 @@ body {
       [col-start] minmax(min-content, 20rem) [col-end]
     )
     [center-end] minmax(4rem, 1fr) [content-end] 15vw [full-end];
-  grid-template-rows: min-content min-content min-content min-content;
 }
 
 .display-none {
