@@ -11,3 +11,13 @@ left.addEventListener("mouseenter", () => {
 left.addEventListener("mouseleave", () => {
   splitScreen.classList.remove("hover-left");
 });
+
+/* when the person is hovering the right */
+right.addEventListener("mouseenter", () => {
+  splitScreen.classList.add("hover-right");
+});
+
+/* when the person is no longer hovering the right */
+right.addEventListener("mouseleave", () => {
+  splitScreen.classList.remove("hover-right");
+});
