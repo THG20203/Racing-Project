@@ -5,6 +5,15 @@
   justify-content: center;
 }
 
+.contact-info__content {
+  background-color: var(--off-white);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+  margin: 5rem;
+}
+
 .contact-info {
   display: flex;
   flex-direction: column;
