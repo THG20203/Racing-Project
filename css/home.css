@@ -12,8 +12,6 @@
 .last-race__container {
   margin: 3rem 0;
   grid-column: full-start / full-end;
-  z-index: 0;
-  position: relative;
 }
 
 .last-race__content {

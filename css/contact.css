@@ -1,3 +1,21 @@
+.contact-container {
+  background-color: var(--ultramarine-blue);
+}
+
+/* Contact Description */
+.contact-description__container {
+  margin: 3rem 0;
+  grid-column: full-start / full-end;
+}
+
+.contact-description__content {
+  margin: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  column-gap: 3rem;
+}
+
+/* Contact Info */
 .contact-info__container {
   grid-column: full-start / full-end;
   display: flex;
@@ -20,7 +38,7 @@
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
-  margin: 3rem 3rem 6rem;
+  margin: 3rem;
 }
 
 .contact-info {
@@ -30,7 +48,7 @@
 
 .social__content {
   display: flex;
-  padding: 1rem 0;
+  padding: 1rem;
   column-gap: 2rem;
 }
 

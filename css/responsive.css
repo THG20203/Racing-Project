@@ -12,6 +12,9 @@
   .last-race__content {
     margin: 0 3rem;
   }
+  .contact-description__content {
+    margin: 0 3rem;
+  }
   .table__layout {
     flex-direction: row;
     /* center content vertically */
@@ -84,6 +87,9 @@
     flex-direction: row;
     align-items: start;
   }
+  .contact-info__content {
+    margin: 6rem 3rem;
+  }
 }
 
 /* Styles for large tablets */
@@ -91,9 +97,6 @@
   /* Add styles for large tablets here */
   .last-race__content {
     flex-direction: row;
-  }
-  .contact-info__content {
-    margin: 3rem 6rem 6rem;
   }
 }
 
@@ -120,6 +123,13 @@
     margin: 3rem 0;
   }
   .last-race__content {
+    margin: 3rem 1rem;
+  }
+  .contact-description__container {
+    grid-column: content-start / content-end;
+    margin: 3rem 0;
+  }
+  .contact-description__content {
     margin: 3rem 1rem;
   }
   /* table section */
