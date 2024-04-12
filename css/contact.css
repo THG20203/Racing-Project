@@ -1,3 +1,11 @@
-.contact-test {
-  background-color: green;
+.contact-info__container {
+  grid-column: full-start / full-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
 }

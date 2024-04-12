@@ -49,7 +49,7 @@ body {
 .animate {
   opacity: 0;
   filter: blur(5px);
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .show-animate .animate {
