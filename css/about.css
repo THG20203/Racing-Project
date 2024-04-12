@@ -1,0 +1,27 @@
+.split-screen {
+  position: relative;
+  grid-column: full-start / full-end;
+  height: 80vh;
+  background: var(--dark-grey);
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left: 0;
+  background-image: url("../img/warehouse.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.right {
+  right: 0;
+  background-image: url("../img/racing-track.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
