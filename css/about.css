@@ -54,6 +54,11 @@
   width: var(--hover-width);
 }
 
-.hover-right .right {
+.hover-right .left {
   width: var(--other-width);
+}
+
+.split.right,
+.split.left {
+  transition: all 0.5s ease-in-out;
 }
