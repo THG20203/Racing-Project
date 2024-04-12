@@ -26,3 +26,15 @@
   display: flex;
   flex-direction: column;
 }
+
+.social__content {
+  display: flex;
+  padding: 2rem 0;
+  column-gap: 2rem;
+}
+
+.social-media__icon {
+  width: 3rem;
+  justify-self: center;
+  cursor: pointer;
+}
