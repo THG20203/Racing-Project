@@ -1,7 +1,7 @@
 .split-screen {
   position: relative;
   grid-column: full-start / full-end;
-  height: 80vh;
+  height: 60vh;
 }
 
 .split {
@@ -40,4 +40,20 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.hover-left .left {
+  width: var(--hover-width);
+}
+
+.hover-left .right {
+  width: var(--other-width);
+}
+
+.hover-right .right {
+  width: var(--hover-width);
+}
+
+.hover-right .right {
+  width: var(--other-width);
 }
