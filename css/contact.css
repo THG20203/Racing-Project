@@ -3,6 +3,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: 5px 5px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #dadada 0,
+    #d7d7d7 1px,
+    #efefef 0,
+    #f2f2f2 50%
+  );
 }
 
 .contact-info__content {

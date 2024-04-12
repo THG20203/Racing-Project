@@ -19,6 +19,7 @@
   margin-right: 3rem;
   display: grid;
   place-items: center;
+  cursor: pointer;
 }
 
 .navigation__background {
