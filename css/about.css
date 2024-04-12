@@ -2,7 +2,6 @@
   position: relative;
   grid-column: full-start / full-end;
   height: 80vh;
-  background: var(--dark-grey);
 }
 
 .split {
@@ -14,14 +13,31 @@
 
 .split.left {
   left: 0;
-  background-image: url("../img/warehouse.png");
+  background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../img/warehouse.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .split.right {
   right: 0;
-  background-image: url("../img/racing-track.png");
+  background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../img/racing-track.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.split-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
