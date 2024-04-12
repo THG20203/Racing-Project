@@ -80,6 +80,10 @@
   .chart-content {
     grid-template-columns: repeat(2, 1fr);
   }
+  .contact-info__container {
+    flex-direction: row;
+    align-items: start;
+  }
 }
 
 /* Styles for large tablets */
