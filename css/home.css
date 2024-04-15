@@ -1,3 +1,17 @@
+/* First section */
+.css-content__section {
+  background-color: var(--dark-grey);
+  grid-column: full-start / full-end;
+  display: flex;
+  align-items: center;
+  height: 8rem;
+  justify-content: center;
+}
+
+.css-link {
+  color: var(--off-white);
+}
+
 /* Last race section */
 .last-race__section {
   grid-column: full-start / full-end;
