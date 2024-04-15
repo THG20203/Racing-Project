@@ -23,3 +23,33 @@ right.addEventListener("mouseenter", () => {
 right.addEventListener("mouseleave", () => {
   splitScreen.classList.remove("hover-right");
 });
+
+/* For mobiles */
+
+/* left side */
+left.addEventListener(
+  "touchstart",
+  (e) => {
+    /* Prevents additional mouse events */
+    e.preventDefault();
+    splitScreen.classList.add("hover-left");
+  },
+  { passive: false }
+);
+left.addEventListener("touchend", () => {
+  splitScreen.classList.remove("hover-left");
+});
+
+/* right side */
+right.addEventListener(
+  "touchstart",
+  (e) => {
+    /* Prevents additional mouse events */
+    e.preventDefault();
+    splitScreen.classList.add("hover-right");
+  },
+  { passive: false }
+);
+right.addEventListener("touchend", () => {
+  splitScreen.classList.remove("hover-right");
+});
