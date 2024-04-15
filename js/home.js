@@ -25,7 +25,8 @@ window.onscroll = () => {
     let scrollDistance = window.scrollY;
     /* offset = distance from section outer border to top edge of parent.
     Parent = home container */
-    let secDistance = sec.offsetTop;
+    /* minus 500 to make it happen quicker */
+    let secDistance = sec.offsetTop - 500;
     if (scrollDistance >= secDistance) {
       sec.classList.add("show-animate");
     }
