@@ -51,7 +51,7 @@ body {
 .animate {
   opacity: 0;
   filter: blur(5px);
-  transition: 0.2s;
+  transition: 0.5s;
 }
 
 .show-animate .animate {
