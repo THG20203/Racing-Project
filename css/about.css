@@ -1,7 +1,7 @@
 .split-screen {
   position: relative;
   grid-column: full-start / full-end;
-  height: 60vh;
+  min-height: 100vh;
   cursor: pointer;
 }
 
