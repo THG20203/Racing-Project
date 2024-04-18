@@ -4,7 +4,7 @@
   grid-column: full-start / full-end;
   display: flex;
   align-items: center;
-  height: 8rem;
+  height: min-content;
   justify-content: center;
 }
 
